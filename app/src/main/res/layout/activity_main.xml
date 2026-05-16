@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- ── Top spacer ── -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.2" />
+
+        <!-- ── Brand icon area ── -->
+        <TextView
+            android:id="@+id/heroEmoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔬"
+            android:textSize="56sp" />
+
+        <!-- ── App name ── -->
+        <TextView
+            android:id="@+id/heroTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MacroMind"
+            android:textColor="#1A1D26"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.02"
+            android:layout_marginTop="16dp" />
+
+        <!-- ── Tagline ── -->
+        <TextView
+            android:id="@+id/heroSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI-Powered Food Scanner"
+            android:textColor="#2563EB"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="6dp" />
+
+        <!-- ── Description ── -->
+        <TextView
+            android:id="@+id/heroDesc"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Scan any food label to instantly analyse ingredients, nutrition, and additives — 100% offline on your device."
+            android:textColor="#6B7280"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_marginTop="16dp" />
+
+        <!-- ── Feature chips ── -->
+        <LinearLayout
+            android:id="@+id/featureRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offline"
+                android:textColor="#2563EB"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/bg_chip"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="6dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI Analysis"
+                android:textColor="#2563EB"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/bg_chip"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="6dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instant"
+                android:textColor="#2563EB"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/bg_chip"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="6dp" />
+        </LinearLayout>
+
+        <!-- ── Spacer ── -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- ── Primary CTA ── -->
+        <Button
+            android:id="@+id/startScanButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="Start Scanning"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/bg_button_primary"
+            android:stateListAnimator="@null"
+            android:elevation="2dp" />
+
+        <!-- ── History button ── -->
+        <Button
+            android:id="@+id/historyButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="10dp"
+            android:text="Scan History"
+            android:textColor="#2563EB"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/bg_button_secondary"
+            android:stateListAnimator="@null" />
+
+        <!-- ── Scan count badge ── -->
+        <TextView
+            android:id="@+id/scanCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="#9CA3AF"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <!-- Version + disclaimer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="32dp"
+            android:text="v5.0 · MacroMind"
+            android:textColor="#9CA3AF"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

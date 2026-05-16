@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Night theme — mirrors day theme (app is always light) -->
+    <style name="Theme.MacroMind" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#2563EB</item>
+        <item name="colorPrimaryVariant">#1D4ED8</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#16A34A</item>
+        <item name="colorSecondaryVariant">#15803D</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <item name="android:colorBackground">#F7F8FA</item>
+        <item name="colorSurface">#FFFFFF</item>
+
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:navigationBarColor">#00000000</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/fade</item>
+        <item name="android:windowExitTransition">@android:transition/fade</item>
+        <item name="android:windowAnimationStyle">@style/MacroMind.WindowAnim</item>
+    </style>
+
+    <!-- Must mirror day theme so manifest references resolve in dark mode -->
+    <style name="Theme.MacroMind.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MacroMind.WindowAnim" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_up_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_down_out</item>
+    </style>
+
+    <style name="Theme.MacroMind.Splash" parent="Theme.MacroMind">
+        <item name="android:windowBackground">#F7F8FA</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="Theme.MacroMind.Camera" parent="Theme.MacroMind">
+        <item name="android:colorBackground">#000000</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.MacroMind.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+    <style name="Theme.MacroMind.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA">
+
+    <!-- ── Loading overlay ── -->
+    <LinearLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#F7F8FA">
+
+        <ProgressBar
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:indeterminateTint="#2563EB"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/loadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analysing with AI…"
+            android:textSize="16sp"
+            android:textColor="#1A1D26"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="100% on-device · no internet needed"
+            android:textSize="12sp"
+            android:textColor="#9CA3AF" />
+    </LinearLayout>
+
+    <!-- ── Main content ── -->
+    <ScrollView
+        android:id="@+id/contentScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <!-- ══════════════════════════════════════════════════════
+                 VERDICT HERO CARD
+                 ══════════════════════════════════════════════════════ -->
+            <LinearLayout
+                android:id="@+id/verdictCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="48dp"
+                android:paddingBottom="28dp"
+                android:paddingHorizontal="24dp"
+                android:background="#F0FDF4">
+
+                <!-- Top bar: app name + offline badge -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MacroMind"
+                        android:textColor="#6B7280"
+                        android:textSize="13sp"
+                        android:fontFamily="sans-serif-medium" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Offline"
+                        android:textColor="#6B7280"
+                        android:textSize="11sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:background="@drawable/bg_chip"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="3dp" />
+                </LinearLayout>
+
+                <!-- Verdict icon -->
+                <TextView
+                    android:id="@+id/verdictEmoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✅"
+                    android:textSize="48sp" />
+
+                <!-- Verdict word -->
+                <TextView
+                    android:id="@+id/verdictLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HEALTHY"
+                    android:textColor="#1A1D26"
+                    android:textSize="28sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.04"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Human-readable tagline -->
+                <TextView
+                    android:id="@+id/verdictTagline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This food is good for you"
+                    android:textColor="#6B7280"
+                    android:textSize="13sp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center" />
+
+                <!-- Score ring + confidence -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp">
+
+                    <com.macromind.foodscanner.ui.ScoreRingView
+                        android:id="@+id/scoreRing"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp" />
+
+                    <TextView
+                        android:id="@+id/verdictConfidence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-70dp"
+                        android:text="82%"
+                        android:textColor="#1A1D26"
+                        android:textSize="22sp"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SCORE"
+                        android:textColor="#9CA3AF"
+                        android:textSize="9sp"
+                        android:textAllCaps="true"
+                        android:letterSpacing="0.12" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ══════════════════════════════════════════════════════
+                 CATEGORY + DATA COMPLETENESS
+                 ══════════════════════════════════════════════════════ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="10dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/categoryBadge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textSize="13sp"
+                    android:textColor="#6B7280" />
+
+                <TextView
+                    android:id="@+id/dataCompleteness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="#9CA3AF"
+                    android:layout_marginTop="2dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- ══════════════════════════════════════════════════════
+                 CONSUMPTION FREQUENCY — how often can you eat this?
+                 ══════════════════════════════════════════════════════ -->
+            <LinearLayout
+                android:id="@+id/frequencyCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card_gradient"
+                android:padding="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:elevation="1dp">
+
+                <!-- Frequency icon -->
+                <TextView
+                    android:id="@+id/frequencyIcon"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:gravity="center"
+                    android:text="🟢"
+                    android:textSize="22sp"
+                    android:background="@drawable/bg_chip" />
+
+                <!-- Label + explanation -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How often can you eat this?"
+                        android:textColor="#6B7280"
+                        android:textSize="11sp"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:id="@+id/frequencyLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Can eat daily"
+                        android:textColor="#1A1D26"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_marginTop="2dp" />
+
+                    <TextView
+                        android:id="@+id/frequencyReason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#9CA3AF"
+                        android:textSize="11sp"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="2" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ══════════════════════════════════════════════════════
+                 WHY THIS VERDICT — plain English explanation
+                 ══════════════════════════════════════════════════════ -->
+            <LinearLayout
+                android:id="@+id/scoreCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_gradient"
+                android:padding="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:elevation="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Why this verdict?"
+                    android:textColor="#1A1D26"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/explanationText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#4B5563"
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.4" />
+
+            </LinearLayout>
+
+            <!-- ══════════════════════════════════════════════════════
+                 ADDITIVES CARD (simplified)
+                 ══════════════════════════════════════════════════════ -->
+            <LinearLayout
+                android:id="@+id/additiveCardWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_gradient"
+                android:padding="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="10dp"
+                android:elevation="1dp">
+
+                <TextView
+                    android:id="@+id/additiveTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Additives"
+                    android:textColor="#1A1D26"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:id="@+id/additiveContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <!-- ══════════════════════════════════════════════════════
+                 NUTRITION FACTS CARD
+                 ══════════════════════════════════════════════════════ -->
+            <LinearLayout
+                android:id="@+id/nutritionCardWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_gradient"
+                android:padding="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="10dp"
+                android:elevation="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nutrition Facts (per 100g)"
+                    android:textColor="#1A1D26"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginBottom="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/nutritionContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <!-- ══════════════════════════════════════════════════════
+                 SCAN AGAIN BUTTON
+                 ══════════════════════════════════════════════════════ -->
+            <Button
+                android:id="@+id/scanAgainButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Scan Another Product"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/bg_button_primary"
+                android:stateListAnimator="@null"
+                android:elevation="2dp" />
+
+            <!-- ── SHARE BUTTON ── -->
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Share"
+                android:textSize="14sp"
+                android:textColor="#2563EB"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/bg_button_secondary"
+                android:stateListAnimator="@null" />
+
+            <!-- Tip footer -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Results are AI-generated estimates. Always read labels."
+                android:textSize="10sp"
+                android:textColor="#9CA3AF"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- ══════════════════════════════════════════════════════════
+         TOP BAR — compact: app name + mode pill only
+         ══════════════════════════════════════════════════════════ -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E6000000"
+        android:paddingTop="14dp"
+        android:paddingBottom="10dp"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- App name + offline badge row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MacroMind"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offline"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:background="@drawable/bg_badge"
+                android:backgroundTint="#33FFFFFF"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp" />
+        </LinearLayout>
+
+        <!-- Mode pill toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            android:background="#1A1A2E"
+            android:padding="3dp">
+
+            <Button
+                android:id="@+id/btnIngredients"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="📋  Ingredients"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-medium"
+                android:backgroundTint="#2563EB"
+                android:stateListAnimator="@null"
+                android:elevation="0dp" />
+
+            <Button
+                android:id="@+id/btnNutrition"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="🥗  Nutrition"
+                android:textColor="#88FFFFFF"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-medium"
+                android:backgroundTint="#00000000"
+                android:stateListAnimator="@null"
+                android:elevation="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ══════════════════════════════════════════════════════════
+         IMAGE — fills space between top and bottom bars
+         ══════════════════════════════════════════════════════════ -->
+    <ImageView
+        android:id="@+id/capturedImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ══════════════════════════════════════════════════════════
+         CROP OVERLAY — sits exactly on the ImageView
+         ══════════════════════════════════════════════════════════ -->
+    <com.macromind.foodscanner.CropOverlayView
+        android:id="@+id/cropOverlayView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/capturedImageView"
+        app:layout_constraintBottom_toBottomOf="@id/capturedImageView"
+        app:layout_constraintStart_toStartOf="@id/capturedImageView"
+        app:layout_constraintEnd_toEndOf="@id/capturedImageView" />
+
+    <!-- ══════════════════════════════════════════════════════════
+         RESET CROP — small floating button, top-right of image
+         ══════════════════════════════════════════════════════════ -->
+    <TextView
+        android:id="@+id/resetCropButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⟳ Reset box"
+        android:textColor="#AAFFFFFF"
+        android:textSize="11sp"
+        android:background="#88000000"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="6dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ══════════════════════════════════════════════════════════
+         BOTTOM ACTION BAR — Instructions + buttons together
+         ══════════════════════════════════════════════════════════ -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E6000000"
+        android:paddingHorizontal="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Instruction hint — NOW AT BOTTOM near the scan button -->
+        <TextView
+            android:id="@+id/modeTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Draw a box over the INGREDIENTS section"
+            android:textColor="#BBBBBB"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Progress dots -->
+        <TextView
+            android:id="@+id/sessionStatusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan each section for best results"
+            android:textColor="#666666"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Button row: [↩ Back]  [   ✓ SCAN SECTION   ]  [✏ Type] -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Back to camera — icon-size square button -->
+            <Button
+                android:id="@+id/retakeButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:text="↩"
+                android:textColor="#CCCCCC"
+                android:textSize="18sp"
+                android:backgroundTint="#1A1A2E"
+                android:stateListAnimator="@null"
+                android:layout_marginEnd="10dp" />
+
+            <!-- Primary scan action — grows to fill space -->
+            <Button
+                android:id="@+id/analyzeButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="✓  Scan Ingredients"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-medium"
+                android:backgroundTint="#2563EB"
+                android:stateListAnimator="@null"
+                android:layout_marginEnd="10dp" />
+
+            <!-- Type manually — icon-size square button -->
+            <Button
+                android:id="@+id/typeManuallyButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:text="✏"
+                android:textColor="#CCCCCC"
+                android:textSize="18sp"
+                android:backgroundTint="#1A1A2E"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ══════════════════════════════════════════════════════════
+         PROCESSING OVERLAY — shown while OCR runs
+         ══════════════════════════════════════════════════════════ -->
+    <LinearLayout
+        android:id="@+id/processingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#CC000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:indeterminateTint="#2563EB"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/processingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reading text…"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="100% on-device"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+{
+  "model_name": "MacroMind Health Classifier",
+  "version": "2.0",
+  "architecture": "Category + Nutrition DNN",
+  "input_features": {
+    "category_one_hot": {
+      "size": 10,
+      "top_categories": [
+        "Groceries",
+        "Yogurts",
+        "Breads",
+        "Sweetened beverages",
+        "Biscuits",
+        "Candies",
+        "Beverages",
+        "Greek-style yogurts",
+        "Breakfast cereals"
+      ],
+      "description": "First N features are one-hot encoded categories"
+    },
+    "nutrition": {
+      "size": 7,
+      "features": [
+        "fat_g",
+        "carbs_g",
+        "sugars_g",
+        "fiber_g",
+        "protein_g",
+        "sodium_mg",
+        "additives_n"
+      ],
+      "description": "Last 7 features are normalized nutrition values"
+    }
+  },
+  "total_input_size": 17,
+  "output_classes": [
+    "Healthy",
+    "Moderate",
+    "Unhealthy"
+  ],
+  "num_classes": 3,
+  "scaler_mean": [
+    13.297132396652675,
+    27.200554200031448,
+    12.454007673889036,
+    2.1568347089526645,
+    8.093737229116037,
+    342.35078969741176,
+    1.5031770224375034
+  ],
+  "scaler_std": [
+    16.862469334942592,
+    26.873282732683553,
+    17.89057235115895,
+    2.5969372812305824,
+    7.483487611496448,
+    471.6719163375659,
+    1.9509079701737255
+  ],
+  "test_accuracy": 0.8642057776451111,
+  "test_loss": 0.3274761140346527,
+  "class_weights": {
+    "0": 1.290232207316416,
+    "1": 1.394311664871474,
+    "2": 0.6632417087862632
+  }
+}

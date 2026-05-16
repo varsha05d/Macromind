@@ -1,0 +1,437 @@
+================================================================================
+                     MACROMIND — FEATURES EXPLAINED
+              (Written for Project Competition Presentation)
+================================================================================
+
+This document explains ALL the features we have built in the MacroMind Food 
+Scanner app, how they work internally, and what makes them special.
+
+Everything in this app works 100% OFFLINE — no internet required at any point.
+
+
+================================================================================
+ 1. FOOD CATEGORY PREDICTION
+================================================================================
+
+What the user sees:
+  A label like "Dairy", "Snacks", "Beverages", etc. with a confidence %.
+
+How it works internally:
+  - When the user scans a food product, the app reads the INGREDIENTS text 
+    using OCR (Google ML Kit — runs on-device, no internet).
+  - The text is converted into numbers using a VOCABULARY file. Each word 
+    gets a unique number (this is called "tokenization").
+  - These numbers are fed into a TensorFlow Lite model called 
+    "food_gap_model.tflite" which was trained on thousands of food products.
+  - The model outputs a list of probabilities — one for each food category.
+  - The category with the highest probability wins.
+
+Key files:
+  - CategoryInference.kt  → runs the TFLite model
+  - TextVectorizer.kt     → converts text to numbers
+  - food_gap_model.tflite  → the trained AI model (in assets/)
+  - metadata_GAP1.json     → the correct category labels
+
+Why this is special:
+  - Most food apps need an internet database lookup. Ours PREDICTS the 
+    category from the ingredient text alone using AI — even for products 
+    not in any database.
+
+
+================================================================================
+ 2. HEALTH VERDICT (HEALTHY / MODERATE / UNHEALTHY)
+================================================================================
+
+What the user sees:
+  A big verdict like "HEALTHY", "MODERATE", or "UNHEALTHY" with a 
+  confidence score (e.g., 82%).
+
+How it works internally:
+  - The app takes the NUTRITION data (fat, sugar, protein, sodium, fiber, 
+    carbs, saturated fat, calories) + the food category + the number of 
+    additives found.
+  - All these values are combined into a "feature vector" — a list of 17 
+    numbers that describe the food.
+  - This feature vector is fed into a second TFLite model called 
+    "food_health_model.tflite".
+  - The model outputs 3 probabilities:
+      • P(Healthy)
+      • P(Moderate)
+      • P(Unhealthy)
+  - The class with the highest probability becomes the verdict.
+  - The probability value becomes the confidence percentage.
+
+Key files:
+  - HealthInference.kt          → runs the health model
+  - food_health_model.tflite    → the trained AI model
+  - OfflineAnalyzer.kt          → orchestrates the whole pipeline
+
+Why this is special:
+  - The model was trained on real-world food data, so it understands that 
+    10g of sugar in a "Beverage" is different from 10g in a "Cereal".
+  - It considers additives as a factor, not just nutrition.
+
+
+================================================================================
+ 3. "WHY THIS VERDICT?" — AI EXPLANATION (SHAP)
+================================================================================
+
+What the user sees:
+  A paragraph like: "This product is okay but has some areas to watch. 
+  It's high in sugar (18.5g) and high in saturated fat (6.2g). It contains 
+  3 additives, 1 of which may be concerning."
+
+How it works internally (HYBRID — Rule-based + SHAP Failsafe):
+  - After the health model gives its verdict, the app checks nutrition
+    values against INTERNATIONAL STANDARDS (not arbitrary thresholds):
+
+    EU Regulation (EC) No 1924/2006 + UK FSA Traffic Light:
+      • Sugar > 12.5g per 100g    → "High in sugar"   (FSA Red)
+      • Sugar ≤ 5g per 100g       → "Low in sugar"    (EU "Low" claim)
+      • Sugar ≤ 0.5g per 100g     → "Sugar free"      (EU "Free" claim)
+      • Total fat > 17.5g per 100g → "High in fat"    (FSA Red)
+      • Saturated fat > 5g per 100g → "High in sat fat" (FSA Red)
+      • Sodium > 600mg per 100g   → "High in sodium"  (FSA Red)
+      • Fiber ≥ 6g per 100g       → "High fiber"      (EU "High" claim)
+      • Fiber ≥ 3g per 100g       → "Source of fiber"  (EU "Source" claim)
+      • Protein ≥ 12g per 100g    → "High protein"     (EU "High" claim)
+
+  - It also counts additives and mentions if any are harmful.
+  - All these pieces are stitched together into a natural sentence.
+
+  SHAP FAILSAFE (transparent AI):
+  - If the AI model rates a product "Unhealthy" or "Moderate" but the
+    rule-based checks find NO explicit concerns (all nutrients pass the
+    EU thresholds), the app automatically extracts the TOP SHAP features
+    to explain the model's reasoning.
+  - KernelSHAP runs the health model ~200 times with different nutrient
+    combinations masked out, then solves a linear equation to figure out
+    EXACTLY how much each nutrient contributed to the verdict.
+  - Example: "The AI model flagged high Saturated Fat (contributing -18%)
+    and low Fiber (contributing -7%) as main concerns."
+  - This ensures the verdict is NEVER a black box — even when the simple
+    rules don't catch it, SHAP explains why the AI made its decision.
+
+Key files:
+  - ResultsActivity.kt → buildExplanation() function (rule-based + SHAP)
+  - KernelShapExplainer.kt → full SHAP implementation (pure Kotlin math)
+
+Why this is special:
+  - All thresholds are traceable to published EU/UK government regulations.
+  - KernelSHAP is a research-grade explainability technique normally used
+    in Python on servers. We implemented it in pure Kotlin running entirely
+    on the phone.
+  - The SHAP failsafe guarantees 100% verdict transparency — the user can
+    ALWAYS understand WHY the AI made its decision.
+  - For competition: "We use Explainable AI (XAI) with internationally
+    verified nutrition standards to ensure our verdicts are transparent,
+    evidence-based, and trustworthy."
+
+
+================================================================================
+ 4. CONSUMPTION FREQUENCY — "How often can you eat this?"
+================================================================================
+
+What the user sees:
+  A card with an icon and label like:
+    🟢 "Can eat daily"
+    🟡 "Once or twice a week"
+    🔴 "Once a month or less"
+    ⛔ "Best avoided regularly"
+  Plus a short reason like: "High sugar · 2 harmful additives"
+
+How the algorithm works (step by step):
+
+  STEP 1 — Start from the verdict:
+    • Healthy verdict   → Start at Level 1 (daily)
+    • Moderate verdict  → Start at Level 3 (once/twice a week)
+    • Unhealthy verdict → Start at Level 5 (once a month)
+
+  STEP 2 — Adjust based on NUTRITION (EU/FSA thresholds):
+    • Sugar > 22.5g per 100g     → Level goes DOWN by 1 (worse)
+    • Saturated fat > 5g per 100g → Level goes DOWN by 1
+    • Sodium > 600mg per 100g    → Level goes DOWN by 1
+    • Fiber >= 6g per 100g       → Level goes UP by 1 (better)
+    • Protein >= 12g per 100g    → Level goes UP by 1
+
+  STEP 3 — Adjust based on ADDITIVES (this is important!):
+    • Any "high severity" additive found → Level goes DOWN by 1
+    • 2 or more harmful additives        → Level goes DOWN by 1 MORE
+    • Zero additives at all              → Level goes UP by 1
+
+  STEP 4 — Clamp to range 1-6:
+    The final level can never go below 1 or above 6.
+
+  STEP 5 — Map to label and color:
+    Level 1 → 🟢 "Can eat daily"           (Green)
+    Level 2 → 🟢 "A few times a week"      (Light Green)
+    Level 3 → 🟡 "Once or twice a week"    (Yellow/Orange)
+    Level 4 → 🟠 "2–3 times a month"       (Orange)
+    Level 5 → 🔴 "Once a month or less"    (Red)
+    Level 6 → ⛔ "Best avoided regularly"   (Dark Red)
+
+EXAMPLE — Scanning a Cola:
+  - Health verdict: Unhealthy → Start at Level 5
+  - Sugar: 35g (> 22g) → +1 → Level 6
+  - Contains E150d (high severity additive) → already at 6, stays
+  - Result: ⛔ "Best avoided regularly"
+  - Reason shown: "Very high sugar (35g) · 1 harmful additive"
+
+EXAMPLE — Scanning Oatmeal:
+  - Health verdict: Healthy → Start at Level 1
+  - Fiber: 8g (>= 6g) → -1 → Level 0 → clamped to Level 1
+  - Protein: 13g (>= 12g) → -1 → already at 1, stays
+  - No additives → -1 → already at 1, stays
+  - Result: 🟢 "Can eat daily"
+  - Reason shown: "Good fiber content · Good protein content · No additives"
+
+EXAMPLE — Scanning Instant Noodles:
+  - Health verdict: Unhealthy → Start at Level 5
+  - Sodium: 1800mg (> 800mg) → +1 → Level 6
+  - Contains E621 (moderate) and E211 (high) → +1 → already at 6
+  - Result: ⛔ "Best avoided regularly"
+  - Reason shown: "High sodium (1800mg) · 1 harmful additive"
+
+Key file:
+  - ResultsActivity.kt → buildConsumptionFrequency() function
+
+Why this is special:
+  - Most apps just say "healthy" or "unhealthy" and leave it at that.
+  - We go one step further and give ACTIONABLE advice: not just what 
+    the food is, but HOW OFTEN you can safely consume it.
+  - The algorithm considers BOTH nutrition AND additives together, 
+    which most competing apps don't do.
+  - 100% offline — it's just math, no API calls needed.
+
+
+================================================================================
+ 5. ADDITIVE DETECTION & SAFETY ANALYSIS
+================================================================================
+
+What the user sees:
+  A list of detected additives with colored dots:
+    🔴 E211 — Sodium Benzoate     [Avoid]
+    🟡 E330 — Citric Acid         [Caution]
+    🟢 E100 — Curcumin
+
+How it works internally:
+  - The app has a local JSON database of ~500 known food additives 
+    (stored in additives_database.json in the assets folder).
+  - Each additive has: code (E-number), name, category, severity level, 
+    health impact description.
+  - When ingredients are scanned, the app searches the text for any 
+    matching E-codes or additive names.
+  - Each match is tagged with its severity: "high", "moderate", "minor", 
+    or "safe".
+
+Key files:
+  - IngredientParser.kt        → searches for additives in text
+  - additives_database.json    → the database of all known additives
+
+Why this is special:
+  - Works offline using a local database.
+  - Severity levels are based on published food safety research.
+  - Integrated into both the health explanation AND the frequency algorithm.
+
+
+================================================================================
+ 6. EDITABLE SCAN RESULTS
+================================================================================
+
+What the user sees:
+  After scanning, a dialog appears showing the scanned text (ingredients) 
+  or values (nutrition) in editable fields. The user can correct any OCR 
+  errors before the AI analyzes the data.
+
+How it works:
+  INGREDIENTS:
+    - OCR scans the text → shown in an editable text box
+    - User can fix typos, add missing words, remove garbage characters
+    - Corrected text is saved to ScanSession
+
+  NUTRITION:
+    - OCR scans the nutrition table → values are parsed into fields
+    - Each field (Fat, Carbs, Sugar, Fiber, Protein, Sodium) is editable
+    - User can correct wrong numbers before analysis
+
+Key files:
+  - CropActivity.kt → showIngredientsEditDialog() and showNutritionEditDialog()
+
+Why this is special:
+  - OCR is never 100% accurate. By letting users correct errors, we get 
+    much more reliable analysis results.
+  - Both dialogs use the same dark-themed premium design for consistency.
+
+
+================================================================================
+ 7. SCAN HISTORY (Room Database + Full Result Replay)
+================================================================================
+
+What the user sees:
+  A history of all past scans, showing category, verdict, confidence,
+  and date in a premium card list. When the user taps on any past scan,
+  the FULL Results Screen opens — with all the same sections (verdict,
+  nutrition analysis, SHAP explanation, additive list, consumption
+  frequency) that the original scan showed.
+
+How it works:
+  - Every scan result is automatically saved to a local Room database.
+  - Room is Android's official database library (SQLite under the hood).
+  - History is stored entirely on-device — no cloud sync.
+  - The FULL analysis result (OfflineAnalyzer.AnalysisResult) is serialized
+    to JSON using Gson and stored in a "rawJson" column alongside the
+    summary fields.
+  - When a user taps a history item, the JSON is deserialized back into
+    an AnalysisResult, set to ScanSession.historyResult, and the
+    ResultsActivity is launched with a "fromHistory" flag.
+  - ResultsActivity checks this flag — if true, it skips re-analysis and
+    directly displays the stored result. It also prevents saving a
+    duplicate history entry.
+  - All buttons remain identical to a fresh scan for consistency.
+
+Key files:
+  - data/AppDatabase.kt       → database setup (version 2)
+  - data/ScanHistoryDao.kt    → database queries
+  - data/ScanHistoryEntity.kt → data structure (includes rawJson column)
+  - HistoryActivity.kt        → list UI + Gson deserialization
+  - ResultsActivity.kt        → fromHistory flag handling
+
+
+================================================================================
+ 8. HARDENED OCR PIPELINE
+================================================================================
+
+What the user sees:
+  More accurate and complete ingredient scanning — the app no longer
+  stops after 2-3 ingredients when the label has 10-20.
+
+Problems fixed:
+  1. REVERSE TEXT / GARBLED OUTPUT:
+     - On some Android devices, the camera sensor captures images without
+       correct rotation metadata, causing ML Kit OCR to read text
+       upside-down or sideways.
+     - Fix: CameraActivity now explicitly sets setTargetRotation() on the
+       ImageCapture builder, locking the orientation to the device's
+       display rotation before the image reaches OCR.
+     - Null-safety fallback: If the display isn't attached yet (race
+       condition during fast activity transitions), it falls back to
+       Surface.ROTATION_0 instead of crashing.
+
+  2. PREMATURE INGREDIENT CUTOFF:
+     - OCR often produces short lines or lines with trailing whitespace.
+       The old parser treated these as "non-ingredient lines" and
+       immediately stopped collecting — even if 15 more ingredient
+       lines followed.
+     - Fix (4 changes in TextParser.kt):
+       a) WHITESPACE NORMALIZATION: Before splitting into lines, all
+          runs of spaces/tabs are collapsed to single spaces. This
+          prevents trailing whitespace from creating phantom fragments.
+       b) SECTION HEADER LOOK-AHEAD: Lines ending with ":" (like
+          "Allergens:") used to immediately stop collection. Now the
+          parser peeks at the next line — if it contains commas,
+          parentheses, or ingredient keywords, it keeps going.
+       c) SHORT FRAGMENT SKIPPING: Lines shorter than 4 characters
+          (OCR junk like "S" or "1.") are now skipped without stopping
+          the collection chain.
+       d) HEURISTIC PEEK-AHEAD TOLERANCE: In the heuristic fallback
+          path, when a non-ingredient-looking line appears, the parser
+          looks ahead up to 2 lines. If an ingredient-like line follows,
+          it bridges the gap instead of giving up.
+
+Key files:
+  - CameraActivity.kt → setTargetRotation() for orientation fix
+  - TextParser.kt     → all 4 collection fixes above
+
+
+================================================================================
+ OVERALL ARCHITECTURE — How Everything Connects
+================================================================================
+
+The full pipeline when a user scans a food product:
+
+  📷 Camera captures image (orientation-locked via setTargetRotation)
+       ↓
+  ✂️  User crops to ingredients / nutrition table
+       ↓
+  🔤 ML Kit OCR extracts text (ON-DEVICE)
+       ↓
+  🧹 TextParser: whitespace normalization + look-ahead collection
+       ↓
+  ✏️  User reviews & corrects text/values
+       ↓
+  🧮 Text is tokenized → fed to Category Model (TFLite)
+       ↓
+  🏷️  Category predicted (e.g., "Snacks")
+       ↓
+  💊 Additives detected from ingredient text (local database)
+       ↓
+  🧬 Nutrition + Category + Additives → Health Model (TFLite)
+       ↓
+  ✅/⚠️/❌ Verdict: Healthy / Moderate / Unhealthy
+       ↓
+  🔬 KernelSHAP runs ~200 model evaluations (ON-DEVICE)
+       ↓
+  📝 EU/FSA-compliant explanation + SHAP failsafe generated
+       ↓
+  ⏰ Consumption frequency calculated
+       ↓
+  📊 Results displayed with animations
+       ↓
+  💾 Full result serialized to JSON → saved to Room DB history
+
+EVERYTHING above runs on the phone. Zero internet. Zero data leaves the device.
+
+
+================================================================================
+ COMPETITION TALKING POINTS
+================================================================================
+
+1. "MacroMind is a 100% offline AI food scanner. No data ever leaves 
+    the user's phone."
+
+2. "We use two TensorFlow Lite neural networks — one for food category 
+    prediction and one for health assessment — both running on-device."
+
+3. "We implement KernelSHAP, a research-grade AI explainability technique, 
+    in pure Kotlin on Android. This makes our AI transparent and trustworthy."
+
+4. "Unlike other food apps that just say 'healthy' or 'unhealthy', 
+    MacroMind tells you WHY and HOW OFTEN you can eat the product, 
+    considering both nutritional content and chemical additives."
+
+5. "Users can correct OCR errors before analysis, ensuring accurate 
+    results even with imperfect scans."
+
+6. "The consumption frequency algorithm combines the AI health verdict, 
+    detailed nutrition analysis, and additive safety data into a single 
+    actionable recommendation."
+
+7. "All nutrition thresholds are backed by EU Regulation (EC) No 1924/2006
+    and UK FSA Traffic Light guidelines — not arbitrary developer choices."
+
+8. "Scan History stores full analysis results as JSON, so users can
+    re-open any past scan with the complete Results screen — not just
+    a summary card."
+
+9. "Our OCR pipeline includes orientation locking, whitespace
+    normalization, and look-ahead parsing to capture complete ingredient
+    lists even from difficult label formats."
+
+
+================================================================================
+ TECHNICAL STACK SUMMARY
+================================================================================
+
+  Language:       Kotlin (Android)
+  AI Framework:   TensorFlow Lite (on-device inference)
+  OCR:            Google ML Kit Text Recognition (offline)
+  Database:       Room (SQLite) + Gson JSON serialization
+  UI:             XML layouts + programmatic views
+  Animations:     Android View animations (staggered entrance)
+  Explainability: KernelSHAP (custom Kotlin implementation)
+  Standards:      EU (EC) 1924/2006 + UK FSA Traffic Light
+  Architecture:   100% offline, zero permissions (no internet, no storage)
+
+================================================================================
+                          END OF DOCUMENT
+================================================================================

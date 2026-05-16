@@ -1,0 +1,4221 @@
+﻿{
+  "metadata": {
+    "version": "2.0",
+    "total_additives": 294,
+    "sources": [
+      "EU Regulation 1333/2008",
+      "WHO JECFA",
+      "EFSA",
+      "FDA GRAS",
+      "Codex Alimentarius"
+    ],
+    "last_updated": "2026-04-28"
+  },
+  "additives": {
+    "E100": {
+      "ins": "100",
+      "name": "Curcumin",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural yellow color from turmeric. Safe.",
+      "adr_limit": "3 mg/kg",
+      "common_in": [
+        "curry",
+        "mustard",
+        "beverages"
+      ]
+    },
+    "E101": {
+      "ins": "101",
+      "name": "Riboflavin (Vitamin B2)",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Vitamin B2 - essential nutrient. Safe as color additive.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cereals",
+        "beverages",
+        "dairy"
+      ]
+    },
+    "E102": {
+      "ins": "102",
+      "name": "Tartrazine",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May cause allergic reactions and hyperactivity in children. Banned in Norway and Austria.",
+      "adr_limit": "7.5 mg/kg",
+      "common_in": [
+        "candies",
+        "soft drinks",
+        "desserts"
+      ]
+    },
+    "E104": {
+      "ins": "104",
+      "name": "Quinoline Yellow",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May cause hyperactivity in children. Banned in USA Australia Japan.",
+      "adr_limit": "10 mg/kg",
+      "common_in": [
+        "smoked fish",
+        "confectionery"
+      ]
+    },
+    "E107": {
+      "ins": "107",
+      "name": "Yellow 2G",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "Linked to allergies and hyperactivity. Banned in many countries including EU.",
+      "adr_limit": "0.5 mg/kg",
+      "common_in": [
+        "soft drinks",
+        "confectionery"
+      ]
+    },
+    "E110": {
+      "ins": "110",
+      "name": "Sunset Yellow FCF",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Linked to hyperactivity in children. Requires warning label in EU.",
+      "adr_limit": "4 mg/kg",
+      "common_in": [
+        "orange sodas",
+        "cheese",
+        "desserts"
+      ]
+    },
+    "E120": {
+      "ins": "120",
+      "name": "Cochineal/Carmine",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Red color from insects. May cause allergic reactions in sensitive people.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "yogurt",
+        "candies",
+        "beverages"
+      ]
+    },
+    "E122": {
+      "ins": "122",
+      "name": "Azorubine/Carmoisine",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May cause hyperactivity and allergic reactions. Banned in USA Norway.",
+      "adr_limit": "4 mg/kg",
+      "common_in": [
+        "sweets",
+        "drinks",
+        "desserts"
+      ]
+    },
+    "E123": {
+      "ins": "123",
+      "name": "Amaranth",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "Linked to cancer in animal studies. Banned in USA Norway Russia.",
+      "adr_limit": "0.5 mg/kg",
+      "common_in": [
+        "caviar",
+        "jelly",
+        "cake mixes"
+      ]
+    },
+    "E124": {
+      "ins": "124",
+      "name": "Ponceau 4R",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Linked to hyperactivity and allergic reactions. Banned in USA Norway.",
+      "adr_limit": "4 mg/kg",
+      "common_in": [
+        "desserts",
+        "candies",
+        "beverages"
+      ]
+    },
+    "E127": {
+      "ins": "127",
+      "name": "Erythrosine",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May affect thyroid function. Linked to hyperactivity. Restricted use.",
+      "adr_limit": "2.5 mg/kg",
+      "common_in": [
+        "cherries",
+        "candies",
+        "popsicles"
+      ]
+    },
+    "E128": {
+      "ins": "128",
+      "name": "Red 2G",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "Converts to carcinogenic aniline in body. Banned in EU since 2007.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sausages",
+        "burgers"
+      ]
+    },
+    "E129": {
+      "ins": "129",
+      "name": "Allura Red AC",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May cause hyperactivity in children. Requires warning label in EU.",
+      "adr_limit": "7 mg/kg",
+      "common_in": [
+        "soft drinks",
+        "candy",
+        "baked goods"
+      ]
+    },
+    "E131": {
+      "ins": "131",
+      "name": "Patent Blue V",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May cause allergic reactions nausea and blood pressure changes.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "candies",
+        "beverages"
+      ]
+    },
+    "E132": {
+      "ins": "132",
+      "name": "Indigotine/Indigo Carmine",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "May cause nausea and skin rashes in sensitive individuals.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "candies",
+        "ice cream",
+        "beverages"
+      ]
+    },
+    "E133": {
+      "ins": "133",
+      "name": "Brilliant Blue FCF",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Generally safe but may cause allergic reactions in sensitive people.",
+      "adr_limit": "6 mg/kg",
+      "common_in": [
+        "ice cream",
+        "popsicles",
+        "beverages"
+      ]
+    },
+    "E140": {
+      "ins": "140",
+      "name": "Chlorophylls",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural green color from plants. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "pasta",
+        "soups",
+        "candy"
+      ]
+    },
+    "E141": {
+      "ins": "141",
+      "name": "Copper Chlorophylls",
+      "category": "Color",
+      "source": "Semi-natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified plant pigment. Generally safe.",
+      "adr_limit": "15 mg/kg",
+      "common_in": [
+        "candy",
+        "ice cream",
+        "soups"
+      ]
+    },
+    "E142": {
+      "ins": "142",
+      "name": "Green S",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May cause allergic reactions. Banned in USA Canada Japan Norway.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "candies",
+        "desserts",
+        "peas"
+      ]
+    },
+    "E150a": {
+      "ins": "150a",
+      "name": "Plain Caramel",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural brown color from heated sugar. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cola",
+        "gravy",
+        "beer"
+      ]
+    },
+    "E150b": {
+      "ins": "150b",
+      "name": "Caustic Sulphite Caramel",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Caramel with sulphite process. May trigger asthma in sensitive people.",
+      "adr_limit": "200 mg/kg",
+      "common_in": [
+        "beer",
+        "sauces",
+        "vinegar"
+      ]
+    },
+    "E150c": {
+      "ins": "150c",
+      "name": "Ammonia Caramel",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "May contain 4-MEI (potential carcinogen in high doses).",
+      "adr_limit": "200 mg/kg",
+      "common_in": [
+        "cola",
+        "soy sauce",
+        "beer"
+      ]
+    },
+    "E150d": {
+      "ins": "150d",
+      "name": "Sulphite Ammonia Caramel",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "May contain 4-MEI (potential carcinogen). Widely used in cola drinks.",
+      "adr_limit": "200 mg/kg",
+      "common_in": [
+        "cola drinks",
+        "baked goods",
+        "soy sauce"
+      ]
+    },
+    "E151": {
+      "ins": "151",
+      "name": "Brilliant Black BN",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May cause allergic reactions and hyperactivity. Banned in USA Canada.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "blackcurrant products",
+        "candies"
+      ]
+    },
+    "E153": {
+      "ins": "153",
+      "name": "Vegetable Carbon",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Charcoal-based black color. Generally safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "candies",
+        "cheese rind"
+      ]
+    },
+    "E154": {
+      "ins": "154",
+      "name": "Brown FK",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "Linked to kidney damage. Banned in EU and most countries.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "smoked fish"
+      ]
+    },
+    "E155": {
+      "ins": "155",
+      "name": "Brown HT",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May cause allergic reactions. Banned in USA Canada Denmark.",
+      "adr_limit": "1.5 mg/kg",
+      "common_in": [
+        "chocolate cakes",
+        "candies"
+      ]
+    },
+    "E160a": {
+      "ins": "160a",
+      "name": "Carotenes (Beta-carotene)",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Vitamin A precursor. Essential nutrient and safe as color.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "margarine",
+        "beverages",
+        "cheese"
+      ]
+    },
+    "E160b": {
+      "ins": "160b",
+      "name": "Annatto",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Natural orange color. Rare allergic reactions reported.",
+      "adr_limit": "12 mg/kg",
+      "common_in": [
+        "cheese",
+        "butter",
+        "margarine"
+      ]
+    },
+    "E160c": {
+      "ins": "160c",
+      "name": "Paprika Extract",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural red color from peppers. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "cheese",
+        "meats"
+      ]
+    },
+    "E160d": {
+      "ins": "160d",
+      "name": "Lycopene",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural red from tomatoes. Beneficial antioxidant.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "drinks",
+        "sauces",
+        "supplements"
+      ]
+    },
+    "E160e": {
+      "ins": "160e",
+      "name": "Beta-apo-8-carotenal",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Carotenoid color. Generally safe.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "cheese",
+        "sauces"
+      ]
+    },
+    "E161b": {
+      "ins": "161b",
+      "name": "Lutein",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural yellow from marigolds. Benefits eye health.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "supplements",
+        "beverages"
+      ]
+    },
+    "E162": {
+      "ins": "162",
+      "name": "Beetroot Red",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural red from beetroot. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "ice cream",
+        "yogurt",
+        "candy"
+      ]
+    },
+    "E163": {
+      "ins": "163",
+      "name": "Anthocyanins",
+      "category": "Color",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural purple/red from berries. Safe and beneficial antioxidant.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "jams",
+        "yogurt"
+      ]
+    },
+    "E170": {
+      "ins": "170",
+      "name": "Calcium Carbonate",
+      "category": "Color",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Chalk - used as white color and calcium supplement. Very safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "bread",
+        "supplements",
+        "candy"
+      ]
+    },
+    "E171": {
+      "ins": "171",
+      "name": "Titanium Dioxide",
+      "category": "Color",
+      "source": "Mineral",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "BANNED in EU (2022) due to genotoxicity concerns. May damage DNA.",
+      "adr_limit": "BANNED in EU",
+      "common_in": [
+        "chewing gum",
+        "candies",
+        "toothpaste"
+      ]
+    },
+    "E172": {
+      "ins": "172",
+      "name": "Iron Oxides",
+      "category": "Color",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural mineral colors. Generally safe in food amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cake decorations",
+        "confectionery"
+      ]
+    },
+    "E173": {
+      "ins": "173",
+      "name": "Aluminium",
+      "category": "Color",
+      "source": "Mineral",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May accumulate in body. Linked to neurological concerns at high doses.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cake decorations",
+        "confectionery"
+      ]
+    },
+    "E174": {
+      "ins": "174",
+      "name": "Silver",
+      "category": "Color",
+      "source": "Mineral",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Decorative only. Very limited use. Generally safe in tiny amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cake decorations",
+        "confectionery"
+      ]
+    },
+    "E175": {
+      "ins": "175",
+      "name": "Gold",
+      "category": "Color",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Decorative only. Inert metal - passes through body unchanged.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "luxury confectionery"
+      ]
+    },
+    "E180": {
+      "ins": "180",
+      "name": "Litholrubine BK",
+      "category": "Color",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Limited use (cheese rind only). May cause allergic reactions.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cheese rind"
+      ]
+    },
+    "E200": {
+      "ins": "200",
+      "name": "Sorbic Acid",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Preservative against mold/yeast. Generally recognized as safe.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "cheese",
+        "wine",
+        "baked goods"
+      ]
+    },
+    "E201": {
+      "ins": "201",
+      "name": "Sodium Sorbate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Salt of sorbic acid. Generally safe preservative.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "cheese",
+        "dried fruits"
+      ]
+    },
+    "E202": {
+      "ins": "202",
+      "name": "Potassium Sorbate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Very common preservative. Generally safe and well-tolerated.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "wine",
+        "dried fruits",
+        "yogurt"
+      ]
+    },
+    "E203": {
+      "ins": "203",
+      "name": "Calcium Sorbate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Calcium salt of sorbic acid. Generally safe.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "dairy products",
+        "baked goods"
+      ]
+    },
+    "E210": {
+      "ins": "210",
+      "name": "Benzoic Acid",
+      "category": "Preservative",
+      "source": "Natural",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "May cause allergic reactions and hyperactivity when combined with artificial colors.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "soft drinks",
+        "pickles",
+        "sauces"
+      ]
+    },
+    "E211": {
+      "ins": "211",
+      "name": "Sodium Benzoate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Can form benzene (carcinogen) when combined with vitamin C. Linked to hyperactivity.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "soft drinks",
+        "salad dressings"
+      ]
+    },
+    "E212": {
+      "ins": "212",
+      "name": "Potassium Benzoate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Same concerns as E211. Can form benzene with vitamin C.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "soft drinks",
+        "margarine"
+      ]
+    },
+    "E213": {
+      "ins": "213",
+      "name": "Calcium Benzoate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Same concerns as other benzoates. Can form benzene with vitamin C.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "pickles",
+        "sauces"
+      ]
+    },
+    "E214": {
+      "ins": "214",
+      "name": "Ethyl p-hydroxybenzoate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Paraben - possible endocrine disruptor. May cause allergic reactions.",
+      "adr_limit": "10 mg/kg",
+      "common_in": [
+        "flavoring extracts",
+        "desserts"
+      ]
+    },
+    "E215": {
+      "ins": "215",
+      "name": "Sodium Ethyl p-hydroxybenzoate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Paraben - same concerns as E214. Possible hormone disruption.",
+      "adr_limit": "10 mg/kg",
+      "common_in": [
+        "desserts",
+        "glazed fruits"
+      ]
+    },
+    "E218": {
+      "ins": "218",
+      "name": "Methyl p-hydroxybenzoate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Paraben - endocrine disruptor concerns. Used in cosmetics too.",
+      "adr_limit": "10 mg/kg",
+      "common_in": [
+        "desserts",
+        "glazed fruits"
+      ]
+    },
+    "E220": {
+      "ins": "220",
+      "name": "Sulphur Dioxide",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Destroys vitamin B1. Can trigger severe asthma attacks in sensitive people.",
+      "adr_limit": "0.7 mg/kg",
+      "common_in": [
+        "dried fruits",
+        "wine",
+        "fruit juices"
+      ]
+    },
+    "E221": {
+      "ins": "221",
+      "name": "Sodium Sulphite",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Sulphite - can cause allergic reactions and asthma. Destroys vitamin B1.",
+      "adr_limit": "0.7 mg/kg",
+      "common_in": [
+        "dried vegetables",
+        "wine"
+      ]
+    },
+    "E222": {
+      "ins": "222",
+      "name": "Sodium Hydrogen Sulphite",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Sulphite - same concerns as E220. Can trigger asthma.",
+      "adr_limit": "0.7 mg/kg",
+      "common_in": [
+        "wine",
+        "preserved fruits"
+      ]
+    },
+    "E223": {
+      "ins": "223",
+      "name": "Sodium Metabisulphite",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Sulphite - triggers asthma in sensitive people. Must be declared on labels.",
+      "adr_limit": "0.7 mg/kg",
+      "common_in": [
+        "wine",
+        "dried fruits",
+        "sausages"
+      ]
+    },
+    "E224": {
+      "ins": "224",
+      "name": "Potassium Metabisulphite",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Sulphite - can trigger severe allergic reactions and asthma attacks.",
+      "adr_limit": "0.7 mg/kg",
+      "common_in": [
+        "wine",
+        "dried fruits",
+        "fruit juices"
+      ]
+    },
+    "E226": {
+      "ins": "226",
+      "name": "Calcium Sulphite",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Sulphite - same concerns as other sulphites. Destroys vitamin B1.",
+      "adr_limit": "0.7 mg/kg",
+      "common_in": [
+        "preserved fruits",
+        "wine"
+      ]
+    },
+    "E227": {
+      "ins": "227",
+      "name": "Calcium Hydrogen Sulphite",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Sulphite - same concerns. Can trigger asthma in sensitive individuals.",
+      "adr_limit": "0.7 mg/kg",
+      "common_in": [
+        "beer",
+        "fruit juices"
+      ]
+    },
+    "E228": {
+      "ins": "228",
+      "name": "Potassium Hydrogen Sulphite",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Sulphite - same concerns. Must be declared as allergen on labels.",
+      "adr_limit": "0.7 mg/kg",
+      "common_in": [
+        "wine",
+        "fruit juices"
+      ]
+    },
+    "E234": {
+      "ins": "234",
+      "name": "Nisin",
+      "category": "Preservative",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural antimicrobial from bacteria. Generally safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cheese",
+        "canned foods"
+      ]
+    },
+    "E235": {
+      "ins": "235",
+      "name": "Natamycin",
+      "category": "Preservative",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural antifungal. Generally safe - used on cheese surface only.",
+      "adr_limit": "0.3 mg/kg",
+      "common_in": [
+        "cheese rind",
+        "sausage casing"
+      ]
+    },
+    "E239": {
+      "ins": "239",
+      "name": "Hexamethylene Tetramine",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "Releases formaldehyde in stomach. Banned in EU and most countries.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "Provolone cheese"
+      ]
+    },
+    "E242": {
+      "ins": "242",
+      "name": "Dimethyl Dicarbonate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Breaks down quickly into harmless substances. Safe.",
+      "adr_limit": "250 mg/L",
+      "common_in": [
+        "beverages",
+        "wine"
+      ]
+    },
+    "E249": {
+      "ins": "249",
+      "name": "Potassium Nitrite",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "Can form carcinogenic nitrosamines. Linked to colorectal cancer risk.",
+      "adr_limit": "0.07 mg/kg",
+      "common_in": [
+        "bacon",
+        "ham",
+        "hot dogs"
+      ]
+    },
+    "E250": {
+      "ins": "250",
+      "name": "Sodium Nitrite",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "Forms carcinogenic nitrosamines when heated. WHO classifies processed meat with nitrites as Group 1 carcinogen.",
+      "adr_limit": "0.07 mg/kg",
+      "common_in": [
+        "bacon",
+        "sausages",
+        "cured meats"
+      ]
+    },
+    "E251": {
+      "ins": "251",
+      "name": "Sodium Nitrate",
+      "category": "Preservative",
+      "source": "Mineral",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Converts to nitrite in body - same cancer concerns as E250.",
+      "adr_limit": "3.7 mg/kg",
+      "common_in": [
+        "salami",
+        "bacon",
+        "cheese"
+      ]
+    },
+    "E252": {
+      "ins": "252",
+      "name": "Potassium Nitrate",
+      "category": "Preservative",
+      "source": "Mineral",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Saltpeter - converts to nitrite. Used in cheese and cured meats.",
+      "adr_limit": "3.7 mg/kg",
+      "common_in": [
+        "cheese",
+        "cured meats"
+      ]
+    },
+    "E260": {
+      "ins": "260",
+      "name": "Acetic Acid",
+      "category": "Acidity Regulator",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Vinegar - completely natural and safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "pickles",
+        "sauces",
+        "mayonnaise"
+      ]
+    },
+    "E261": {
+      "ins": "261",
+      "name": "Potassium Acetate",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Potassium salt of vinegar. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "pickled foods"
+      ]
+    },
+    "E262": {
+      "ins": "262",
+      "name": "Sodium Acetate",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Sodium salt of vinegar. Safe - gives salt and vinegar flavor.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chips",
+        "pickled foods"
+      ]
+    },
+    "E263": {
+      "ins": "263",
+      "name": "Calcium Acetate",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Calcium salt of vinegar. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods",
+        "candy"
+      ]
+    },
+    "E270": {
+      "ins": "270",
+      "name": "Lactic Acid",
+      "category": "Acidity Regulator",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural acid found in yogurt. Very safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "dairy",
+        "beverages",
+        "candies"
+      ]
+    },
+    "E280": {
+      "ins": "280",
+      "name": "Propionic Acid",
+      "category": "Preservative",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Naturally occurs in cheese. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "bread",
+        "baked goods"
+      ]
+    },
+    "E281": {
+      "ins": "281",
+      "name": "Sodium Propionate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Salt of propionic acid. May cause headaches in sensitive people.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "bread",
+        "baked goods"
+      ]
+    },
+    "E282": {
+      "ins": "282",
+      "name": "Calcium Propionate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Common bread preservative. May cause irritability and sleep issues in children at high doses.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "bread",
+        "baked goods",
+        "tortillas"
+      ]
+    },
+    "E283": {
+      "ins": "283",
+      "name": "Potassium Propionate",
+      "category": "Preservative",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Same as E282. Generally safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "bread",
+        "baked goods"
+      ]
+    },
+    "E290": {
+      "ins": "290",
+      "name": "Carbon Dioxide",
+      "category": "Preservative",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Carbonation gas - completely safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "carbonated drinks",
+        "beer"
+      ]
+    },
+    "E296": {
+      "ins": "296",
+      "name": "Malic Acid",
+      "category": "Acidity Regulator",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural acid found in apples. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "candy",
+        "beverages",
+        "fruit products"
+      ]
+    },
+    "E297": {
+      "ins": "297",
+      "name": "Fumaric Acid",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Used as tartness source. Safe in food amounts.",
+      "adr_limit": "6 mg/kg",
+      "common_in": [
+        "desserts",
+        "beverages",
+        "candy"
+      ]
+    },
+    "E300": {
+      "ins": "300",
+      "name": "Ascorbic Acid (Vitamin C)",
+      "category": "Antioxidant",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Vitamin C - essential nutrient. Safe and beneficial.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "cured meats",
+        "fruits"
+      ]
+    },
+    "E301": {
+      "ins": "301",
+      "name": "Sodium Ascorbate",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Sodium salt of vitamin C. Generally safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cured meats",
+        "beverages"
+      ]
+    },
+    "E302": {
+      "ins": "302",
+      "name": "Calcium Ascorbate",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Calcium salt of vitamin C. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "supplements"
+      ]
+    },
+    "E304": {
+      "ins": "304",
+      "name": "Fatty Acid Esters of Ascorbic Acid",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Fat-soluble vitamin C. Safe.",
+      "adr_limit": "1.25 mg/kg",
+      "common_in": [
+        "oils",
+        "fats",
+        "margarine"
+      ]
+    },
+    "E306": {
+      "ins": "306",
+      "name": "Tocopherols (Vitamin E)",
+      "category": "Antioxidant",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Vitamin E - essential nutrient. Beneficial antioxidant.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "oils",
+        "cereals",
+        "margarine"
+      ]
+    },
+    "E307": {
+      "ins": "307",
+      "name": "Alpha-tocopherol",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Synthetic vitamin E. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "oils",
+        "fats",
+        "baby food"
+      ]
+    },
+    "E308": {
+      "ins": "308",
+      "name": "Gamma-tocopherol",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Form of vitamin E. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "oils",
+        "fats"
+      ]
+    },
+    "E309": {
+      "ins": "309",
+      "name": "Delta-tocopherol",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Form of vitamin E. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "oils",
+        "fats"
+      ]
+    },
+    "E310": {
+      "ins": "310",
+      "name": "Propyl Gallate",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May cause allergic reactions and stomach irritation. Endocrine disruptor concerns.",
+      "adr_limit": "1.4 mg/kg",
+      "common_in": [
+        "vegetable oils",
+        "chewing gum"
+      ]
+    },
+    "E311": {
+      "ins": "311",
+      "name": "Octyl Gallate",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Same concerns as E310. May cause skin irritation and gastric issues.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "fats",
+        "oils",
+        "margarine"
+      ]
+    },
+    "E312": {
+      "ins": "312",
+      "name": "Dodecyl Gallate",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Same concerns as E310/E311. May cause gastric irritation.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "fats",
+        "oils"
+      ]
+    },
+    "E315": {
+      "ins": "315",
+      "name": "Erythorbic Acid",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Similar to vitamin C. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cured meats",
+        "pickled products"
+      ]
+    },
+    "E316": {
+      "ins": "316",
+      "name": "Sodium Erythorbate",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Salt of erythorbic acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cured meats",
+        "hot dogs"
+      ]
+    },
+    "E319": {
+      "ins": "319",
+      "name": "TBHQ",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "High doses linked to DNA damage and tumors in animal studies.",
+      "adr_limit": "0.7 mg/kg",
+      "common_in": [
+        "crackers",
+        "chips",
+        "vegetable oils"
+      ]
+    },
+    "E320": {
+      "ins": "320",
+      "name": "BHA",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "Possible carcinogen (California Prop 65). Endocrine disruptor. Banned in Japan.",
+      "adr_limit": "0.5 mg/kg",
+      "common_in": [
+        "cereals",
+        "chewing gum",
+        "potato chips"
+      ]
+    },
+    "E321": {
+      "ins": "321",
+      "name": "BHT",
+      "category": "Antioxidant",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May affect thyroid and liver. Possible carcinogen. Restricted in EU.",
+      "adr_limit": "0.25 mg/kg",
+      "common_in": [
+        "cereals",
+        "chips",
+        "chewing gum"
+      ]
+    },
+    "E322": {
+      "ins": "322",
+      "name": "Lecithins",
+      "category": "Emulsifier",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural from soy or sunflower. Safe - essential nutrient.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chocolate",
+        "margarine",
+        "bread"
+      ]
+    },
+    "E325": {
+      "ins": "325",
+      "name": "Sodium Lactate",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Sodium salt of lactic acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cheese",
+        "confectionery",
+        "sauces"
+      ]
+    },
+    "E326": {
+      "ins": "326",
+      "name": "Potassium Lactate",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Potassium salt of lactic acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cheese",
+        "confectionery"
+      ]
+    },
+    "E327": {
+      "ins": "327",
+      "name": "Calcium Lactate",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Calcium salt of lactic acid. Safe - also calcium supplement.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cheese",
+        "baking powder"
+      ]
+    },
+    "E330": {
+      "ins": "330",
+      "name": "Citric Acid",
+      "category": "Acidity Regulator",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural acid from citrus fruits. Very safe. May erode tooth enamel in large amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "soft drinks",
+        "candies",
+        "jams"
+      ]
+    },
+    "E331": {
+      "ins": "331",
+      "name": "Sodium Citrates",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Sodium salts of citric acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "soft drinks",
+        "processed cheese"
+      ]
+    },
+    "E332": {
+      "ins": "332",
+      "name": "Potassium Citrates",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Potassium salts of citric acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "confectionery"
+      ]
+    },
+    "E333": {
+      "ins": "333",
+      "name": "Calcium Citrates",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Calcium salts of citric acid. Safe - also calcium source.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "cheese",
+        "jam"
+      ]
+    },
+    "E334": {
+      "ins": "334",
+      "name": "Tartaric Acid",
+      "category": "Acidity Regulator",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural acid from grapes. Safe.",
+      "adr_limit": "30 mg/kg",
+      "common_in": [
+        "wine",
+        "candy",
+        "baking powder"
+      ]
+    },
+    "E335": {
+      "ins": "335",
+      "name": "Sodium Tartrates",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Sodium salt of tartaric acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "confectionery",
+        "cheese"
+      ]
+    },
+    "E336": {
+      "ins": "336",
+      "name": "Potassium Tartrates",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Cream of tartar - safe and widely used.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baking powder",
+        "confectionery"
+      ]
+    },
+    "E337": {
+      "ins": "337",
+      "name": "Sodium Potassium Tartrate",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Rochelle salt. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cheese",
+        "confectionery"
+      ]
+    },
+    "E338": {
+      "ins": "338",
+      "name": "Phosphoric Acid",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Found in cola. Excess linked to bone loss and kidney problems.",
+      "adr_limit": "70 mg/kg",
+      "common_in": [
+        "cola drinks",
+        "processed cheese"
+      ]
+    },
+    "E339": {
+      "ins": "339",
+      "name": "Sodium Phosphates",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Phosphate - excess intake may affect calcium absorption and kidney health.",
+      "adr_limit": "70 mg/kg",
+      "common_in": [
+        "processed cheese",
+        "baked goods"
+      ]
+    },
+    "E340": {
+      "ins": "340",
+      "name": "Potassium Phosphates",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Phosphate - same concerns as E339.",
+      "adr_limit": "70 mg/kg",
+      "common_in": [
+        "processed cheese",
+        "coffee creamer"
+      ]
+    },
+    "E341": {
+      "ins": "341",
+      "name": "Calcium Phosphates",
+      "category": "Emulsifier",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Also provides calcium. Generally safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baking powder",
+        "supplements"
+      ]
+    },
+    "E343": {
+      "ins": "343",
+      "name": "Magnesium Phosphates",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Also provides magnesium. Generally safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "supplements",
+        "beverages"
+      ]
+    },
+    "E350": {
+      "ins": "350",
+      "name": "Sodium Malates",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Sodium salt of malic acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "confectionery"
+      ]
+    },
+    "E351": {
+      "ins": "351",
+      "name": "Potassium Malate",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Potassium salt of malic acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages"
+      ]
+    },
+    "E352": {
+      "ins": "352",
+      "name": "Calcium Malates",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Calcium salt of malic acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "confectionery"
+      ]
+    },
+    "E353": {
+      "ins": "353",
+      "name": "Metatartaric Acid",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Used in winemaking. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "wine"
+      ]
+    },
+    "E354": {
+      "ins": "354",
+      "name": "Calcium Tartrate",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Calcium salt of tartaric acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "confectionery"
+      ]
+    },
+    "E355": {
+      "ins": "355",
+      "name": "Adipic Acid",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Used for tart flavor. Safe.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "desserts",
+        "beverages"
+      ]
+    },
+    "E363": {
+      "ins": "363",
+      "name": "Succinic Acid",
+      "category": "Acidity Regulator",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural acid found in many foods. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "confectionery"
+      ]
+    },
+    "E380": {
+      "ins": "380",
+      "name": "Triammonium Citrate",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Ammonium salt of citric acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cheese",
+        "confectionery"
+      ]
+    },
+    "E385": {
+      "ins": "385",
+      "name": "Calcium Disodium EDTA",
+      "category": "Sequestrant",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Metal chelator. May affect mineral absorption at high doses.",
+      "adr_limit": "2.5 mg/kg",
+      "common_in": [
+        "canned foods",
+        "dressings",
+        "sauces"
+      ]
+    },
+    "E400": {
+      "ins": "400",
+      "name": "Alginic Acid",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural from seaweed. Safe - also acts as dietary fiber.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "ice cream",
+        "desserts",
+        "dressings"
+      ]
+    },
+    "E401": {
+      "ins": "401",
+      "name": "Sodium Alginate",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Sodium salt of alginic acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "ice cream",
+        "dressings",
+        "sauces"
+      ]
+    },
+    "E402": {
+      "ins": "402",
+      "name": "Potassium Alginate",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Potassium salt of alginic acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "desserts",
+        "dairy"
+      ]
+    },
+    "E403": {
+      "ins": "403",
+      "name": "Ammonium Alginate",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Ammonium salt of alginic acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "ice cream",
+        "desserts"
+      ]
+    },
+    "E404": {
+      "ins": "404",
+      "name": "Calcium Alginate",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Calcium salt of alginic acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "desserts"
+      ]
+    },
+    "E405": {
+      "ins": "405",
+      "name": "Propane-1 2-diol Alginate",
+      "category": "Thickener",
+      "source": "Semi-natural",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Modified alginate. Generally safe but may cause mild digestive issues.",
+      "adr_limit": "70 mg/kg",
+      "common_in": [
+        "dressings",
+        "ice cream",
+        "beer foam"
+      ]
+    },
+    "E406": {
+      "ins": "406",
+      "name": "Agar",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural from seaweed. Safe - used as vegetarian gelatin.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "desserts",
+        "ice cream",
+        "candy"
+      ]
+    },
+    "E407": {
+      "ins": "407",
+      "name": "Carrageenan",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Seaweed extract - degraded form linked to inflammation and digestive issues in animal studies.",
+      "adr_limit": "75 mg/kg",
+      "common_in": [
+        "dairy",
+        "deli meats",
+        "ice cream"
+      ]
+    },
+    "E407a": {
+      "ins": "407a",
+      "name": "Processed Eucheuma Seaweed",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Similar to carrageenan but less processed. Same mild concerns.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "dairy products",
+        "desserts"
+      ]
+    },
+    "E410": {
+      "ins": "410",
+      "name": "Locust Bean Gum",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural from carob seeds. Safe - may cause mild digestive discomfort.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "ice cream",
+        "cheese",
+        "sauces"
+      ]
+    },
+    "E412": {
+      "ins": "412",
+      "name": "Guar Gum",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural fiber from guar beans. Safe. May cause digestive discomfort in large amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "ice cream",
+        "sauces",
+        "baked goods"
+      ]
+    },
+    "E413": {
+      "ins": "413",
+      "name": "Tragacanth",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural tree gum. Safe in food amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "dressings",
+        "sauces",
+        "ice cream"
+      ]
+    },
+    "E414": {
+      "ins": "414",
+      "name": "Acacia Gum (Gum Arabic)",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural tree gum. Very safe - good source of fiber.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "soft drinks",
+        "candy",
+        "wine"
+      ]
+    },
+    "E415": {
+      "ins": "415",
+      "name": "Xanthan Gum",
+      "category": "Thickener",
+      "source": "Bacterial",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Safe polysaccharide. May cause digestive discomfort in large amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "dressings",
+        "sauces",
+        "ice cream"
+      ]
+    },
+    "E416": {
+      "ins": "416",
+      "name": "Karaya Gum",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural tree gum. Safe. May cause allergic reactions rarely.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "ice cream",
+        "cheese"
+      ]
+    },
+    "E417": {
+      "ins": "417",
+      "name": "Tara Gum",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural from tara seeds. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "dairy products",
+        "sauces"
+      ]
+    },
+    "E418": {
+      "ins": "418",
+      "name": "Gellan Gum",
+      "category": "Thickener",
+      "source": "Bacterial",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Safe. Used in plant-based milks and desserts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "plant milk",
+        "desserts",
+        "candy"
+      ]
+    },
+    "E420": {
+      "ins": "420",
+      "name": "Sorbitol",
+      "category": "Sweetener",
+      "source": "Natural",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Sugar alcohol - can cause gas and diarrhea in large amounts. Laxative effect.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sugar-free gum",
+        "diabetic foods"
+      ]
+    },
+    "E421": {
+      "ins": "421",
+      "name": "Mannitol",
+      "category": "Sweetener",
+      "source": "Natural",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Sugar alcohol - laxative effect in doses over 20g.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sugar-free candy",
+        "chewing gum"
+      ]
+    },
+    "E422": {
+      "ins": "422",
+      "name": "Glycerol",
+      "category": "Humectant",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Very common humectant. Safe and well-tolerated.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods",
+        "candy",
+        "marshmallows"
+      ]
+    },
+    "E425": {
+      "ins": "425",
+      "name": "Konjac Glucomannan",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "May cause choking if eaten dry. Safe when properly prepared. Banned in jelly cups in EU.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "noodles",
+        "jelly",
+        "supplements"
+      ]
+    },
+    "E426": {
+      "ins": "426",
+      "name": "Soybean Hemicellulose",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "From soybeans. Safe - may be issue for soy allergy.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "dressings",
+        "beverages"
+      ]
+    },
+    "E427": {
+      "ins": "427",
+      "name": "Cassia Gum",
+      "category": "Thickener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "From cassia seeds. Safe in approved amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "dairy products",
+        "desserts"
+      ]
+    },
+    "E431": {
+      "ins": "431",
+      "name": "Polyoxyethylene (40) Stearate",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Synthetic emulsifier. May cause mild digestive issues.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "bakery",
+        "desserts"
+      ]
+    },
+    "E432": {
+      "ins": "432",
+      "name": "Polysorbate 20",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "May cause mild digestive issues at high doses.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "ice cream",
+        "dressings",
+        "baked goods"
+      ]
+    },
+    "E433": {
+      "ins": "433",
+      "name": "Polysorbate 80",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "May affect gut bacteria and intestinal permeability in animal studies.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "ice cream",
+        "sauces",
+        "chewing gum"
+      ]
+    },
+    "E434": {
+      "ins": "434",
+      "name": "Polysorbate 40",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Same concerns as other polysorbates.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "desserts",
+        "ice cream"
+      ]
+    },
+    "E435": {
+      "ins": "435",
+      "name": "Polysorbate 60",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Same concerns as other polysorbates.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "baked goods",
+        "desserts"
+      ]
+    },
+    "E436": {
+      "ins": "436",
+      "name": "Polysorbate 65",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Same concerns as other polysorbates.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "ice cream",
+        "desserts"
+      ]
+    },
+    "E440": {
+      "ins": "440",
+      "name": "Pectins",
+      "category": "Gelling Agent",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural fiber from fruits. Safe and beneficial - helps lower cholesterol.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "jams",
+        "jellies",
+        "yogurt"
+      ]
+    },
+    "E441": {
+      "ins": "441",
+      "name": "Gelatin",
+      "category": "Gelling Agent",
+      "source": "Animal",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "From animal bones/skin. Safe but not vegetarian/halal.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "desserts",
+        "candy",
+        "marshmallows"
+      ]
+    },
+    "E442": {
+      "ins": "442",
+      "name": "Ammonium Phosphatides",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Used in chocolate. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chocolate",
+        "cocoa products"
+      ]
+    },
+    "E444": {
+      "ins": "444",
+      "name": "Sucrose Acetate Isobutyrate",
+      "category": "Stabilizer",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Used in beverages. May cause mild issues at very high doses.",
+      "adr_limit": "20 mg/kg",
+      "common_in": [
+        "flavored drinks",
+        "cocktail mixes"
+      ]
+    },
+    "E445": {
+      "ins": "445",
+      "name": "Glycerol Esters of Wood Rosins",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Used to keep citrus oils suspended in drinks. Generally safe.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "citrus beverages",
+        "chewing gum"
+      ]
+    },
+    "E450": {
+      "ins": "450",
+      "name": "Diphosphates",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Excessive phosphate intake linked to kidney disease and heart problems.",
+      "adr_limit": "70 mg/kg",
+      "common_in": [
+        "processed meats",
+        "soft drinks",
+        "baked goods"
+      ]
+    },
+    "E451": {
+      "ins": "451",
+      "name": "Triphosphates",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Same phosphate concerns as E450. Linked to cardiovascular issues.",
+      "adr_limit": "70 mg/kg",
+      "common_in": [
+        "processed cheese",
+        "cured meats"
+      ]
+    },
+    "E452": {
+      "ins": "452",
+      "name": "Polyphosphates",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Phosphates accumulate in body. Linked to kidney damage and cardiovascular disease.",
+      "adr_limit": "70 mg/kg",
+      "common_in": [
+        "processed meats",
+        "seafood"
+      ]
+    },
+    "E459": {
+      "ins": "459",
+      "name": "Beta-cyclodextrin",
+      "category": "Stabilizer",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Starch derivative. Safe.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "flavored products",
+        "supplements"
+      ]
+    },
+    "E460": {
+      "ins": "460",
+      "name": "Cellulose",
+      "category": "Bulking Agent",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Plant fiber - safe and indigestible. Acts as dietary fiber.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "shredded cheese",
+        "bread",
+        "supplements"
+      ]
+    },
+    "E461": {
+      "ins": "461",
+      "name": "Methyl Cellulose",
+      "category": "Thickener",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified cellulose. Safe - used in gluten-free baking.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods",
+        "sauces",
+        "ice cream"
+      ]
+    },
+    "E462": {
+      "ins": "462",
+      "name": "Ethyl Cellulose",
+      "category": "Glazing Agent",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified cellulose. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "confectionery coatings",
+        "supplements"
+      ]
+    },
+    "E463": {
+      "ins": "463",
+      "name": "Hydroxypropyl Cellulose",
+      "category": "Thickener",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified cellulose. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods",
+        "supplements"
+      ]
+    },
+    "E464": {
+      "ins": "464",
+      "name": "Hydroxypropyl Methyl Cellulose",
+      "category": "Thickener",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified cellulose. Safe - used in vegetarian capsules.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "supplements",
+        "baked goods",
+        "ice cream"
+      ]
+    },
+    "E465": {
+      "ins": "465",
+      "name": "Ethyl Methyl Cellulose",
+      "category": "Thickener",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified cellulose. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods",
+        "sauces"
+      ]
+    },
+    "E466": {
+      "ins": "466",
+      "name": "Carboxymethyl Cellulose",
+      "category": "Thickener",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Modified cellulose. Recent studies suggest it may alter gut bacteria and promote inflammation.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "ice cream",
+        "dressings",
+        "baked goods"
+      ]
+    },
+    "E470a": {
+      "ins": "470a",
+      "name": "Sodium/Potassium/Calcium Fatty Acid Salts",
+      "category": "Emulsifier",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural emulsifiers from fatty acids. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods",
+        "chewing gum"
+      ]
+    },
+    "E470b": {
+      "ins": "470b",
+      "name": "Magnesium Fatty Acid Salts",
+      "category": "Emulsifier",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Magnesium salts of fatty acids. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "supplements",
+        "baked goods"
+      ]
+    },
+    "E471": {
+      "ins": "471",
+      "name": "Mono- and Diglycerides",
+      "category": "Emulsifier",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Very common emulsifier. Safe - similar to natural fats.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "bread",
+        "margarine",
+        "ice cream"
+      ]
+    },
+    "E472a": {
+      "ins": "472a",
+      "name": "Acetic Acid Esters of Mono/Diglycerides",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified fat-based emulsifier. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods",
+        "desserts"
+      ]
+    },
+    "E472b": {
+      "ins": "472b",
+      "name": "Lactic Acid Esters of Mono/Diglycerides",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified fat-based emulsifier. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "bread",
+        "baked goods"
+      ]
+    },
+    "E472c": {
+      "ins": "472c",
+      "name": "Citric Acid Esters of Mono/Diglycerides",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified fat-based emulsifier. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "margarine",
+        "baked goods"
+      ]
+    },
+    "E472e": {
+      "ins": "472e",
+      "name": "DATEM",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Common bread improver. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "bread",
+        "baked goods"
+      ]
+    },
+    "E473": {
+      "ins": "473",
+      "name": "Sucrose Esters of Fatty Acids",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Sugar-based emulsifier. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "baked goods",
+        "dairy"
+      ]
+    },
+    "E474": {
+      "ins": "474",
+      "name": "Sucroglycerides",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Sugar-based emulsifier. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods",
+        "dairy"
+      ]
+    },
+    "E475": {
+      "ins": "475",
+      "name": "Polyglycerol Esters of Fatty Acids",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Fat-based emulsifier. Safe.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "baked goods",
+        "margarine"
+      ]
+    },
+    "E476": {
+      "ins": "476",
+      "name": "Polyglycerol Polyricinoleate (PGPR)",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Common in chocolate. May affect kidney size at high doses in animal studies.",
+      "adr_limit": "7.5 mg/kg",
+      "common_in": [
+        "chocolate",
+        "margarine"
+      ]
+    },
+    "E477": {
+      "ins": "477",
+      "name": "Propane-1 2-diol Esters of Fatty Acids",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Fat-based emulsifier. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods",
+        "desserts"
+      ]
+    },
+    "E481": {
+      "ins": "481",
+      "name": "Sodium Stearoyl Lactylate (SSL)",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Common bread improver. Safe.",
+      "adr_limit": "22 mg/kg",
+      "common_in": [
+        "bread",
+        "baked goods",
+        "pancake mix"
+      ]
+    },
+    "E482": {
+      "ins": "482",
+      "name": "Calcium Stearoyl Lactylate (CSL)",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Similar to SSL. Common bread improver. Safe.",
+      "adr_limit": "22 mg/kg",
+      "common_in": [
+        "bread",
+        "baked goods"
+      ]
+    },
+    "E491": {
+      "ins": "491",
+      "name": "Sorbitan Monostearate",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Used in cake mixes and chocolate. Safe.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "cakes",
+        "chocolate",
+        "margarine"
+      ]
+    },
+    "E492": {
+      "ins": "492",
+      "name": "Sorbitan Tristearate",
+      "category": "Emulsifier",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Similar to E491. Safe.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "chocolate",
+        "candy coatings"
+      ]
+    },
+    "E500": {
+      "ins": "500",
+      "name": "Sodium Carbonates",
+      "category": "Raising Agent",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Baking soda. Very safe and widely used.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods",
+        "beverages"
+      ]
+    },
+    "E501": {
+      "ins": "501",
+      "name": "Potassium Carbonates",
+      "category": "Raising Agent",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Similar to baking soda. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods",
+        "cocoa"
+      ]
+    },
+    "E503": {
+      "ins": "503",
+      "name": "Ammonium Carbonates",
+      "category": "Raising Agent",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Used as raising agent - decomposes during baking. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "biscuits",
+        "crackers"
+      ]
+    },
+    "E504": {
+      "ins": "504",
+      "name": "Magnesium Carbonates",
+      "category": "Anticaking Agent",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Mineral salt. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "salt",
+        "icing sugar",
+        "supplements"
+      ]
+    },
+    "E507": {
+      "ins": "507",
+      "name": "Hydrochloric Acid",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Naturally present in stomach. Safe in food amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "gelatin production",
+        "sauces"
+      ]
+    },
+    "E508": {
+      "ins": "508",
+      "name": "Potassium Chloride",
+      "category": "Salt Substitute",
+      "source": "Mineral",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Used as salt substitute. May cause digestive issues. People with kidney problems should limit intake.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "low-sodium products",
+        "salt substitutes"
+      ]
+    },
+    "E509": {
+      "ins": "509",
+      "name": "Calcium Chloride",
+      "category": "Firming Agent",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Used to keep canned vegetables firm. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "canned vegetables",
+        "cheese",
+        "tofu"
+      ]
+    },
+    "E511": {
+      "ins": "511",
+      "name": "Magnesium Chloride",
+      "category": "Firming Agent",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Used to make tofu. Safe - also magnesium source.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "tofu",
+        "sea salt"
+      ]
+    },
+    "E512": {
+      "ins": "512",
+      "name": "Stannous Chloride",
+      "category": "Antioxidant",
+      "source": "Mineral",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Tin salt. Safe in permitted amounts. Excess may cause nausea.",
+      "adr_limit": "14 mg/kg",
+      "common_in": [
+        "canned foods"
+      ]
+    },
+    "E514": {
+      "ins": "514",
+      "name": "Sodium Sulphates",
+      "category": "Acidity Regulator",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Mineral salt. Safe in food amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cheese",
+        "dyes"
+      ]
+    },
+    "E515": {
+      "ins": "515",
+      "name": "Potassium Sulphates",
+      "category": "Acidity Regulator",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Mineral salt. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "supplements"
+      ]
+    },
+    "E516": {
+      "ins": "516",
+      "name": "Calcium Sulphate",
+      "category": "Firming Agent",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Plaster of Paris - used to make tofu. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "tofu",
+        "bread",
+        "flour"
+      ]
+    },
+    "E524": {
+      "ins": "524",
+      "name": "Sodium Hydroxide",
+      "category": "Acidity Regulator",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Strong alkali - neutralized in processing. Safe in final products.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cocoa processing",
+        "olives",
+        "pretzels"
+      ]
+    },
+    "E526": {
+      "ins": "526",
+      "name": "Calcium Hydroxide",
+      "category": "Acidity Regulator",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Lime water - used in food processing. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "corn tortillas",
+        "pickles"
+      ]
+    },
+    "E529": {
+      "ins": "529",
+      "name": "Calcium Oxide",
+      "category": "Acidity Regulator",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Quicklime - reacts with water. Safe in processed food.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "flour",
+        "corn products"
+      ]
+    },
+    "E535": {
+      "ins": "535",
+      "name": "Sodium Ferrocyanide",
+      "category": "Anticaking",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Anticaking agent for salt. Safe in tiny amounts used.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "table salt",
+        "road salt"
+      ]
+    },
+    "E536": {
+      "ins": "536",
+      "name": "Potassium Ferrocyanide",
+      "category": "Anticaking",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Anticaking agent. Safe in permitted amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "salt",
+        "wine"
+      ]
+    },
+    "E541": {
+      "ins": "541",
+      "name": "Sodium Aluminium Phosphate",
+      "category": "Raising Agent",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Contains aluminium. May accumulate in body at high intakes.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baking powder",
+        "cake mixes"
+      ]
+    },
+    "E551": {
+      "ins": "551",
+      "name": "Silicon Dioxide",
+      "category": "Anticaking",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Sand/quartz - passes through body unchanged. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "salt",
+        "spices",
+        "powdered foods"
+      ]
+    },
+    "E552": {
+      "ins": "552",
+      "name": "Calcium Silicate",
+      "category": "Anticaking",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Mineral anticaking agent. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "salt",
+        "supplements"
+      ]
+    },
+    "E553": {
+      "ins": "553",
+      "name": "Magnesium Silicate/Talc",
+      "category": "Anticaking",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Talc - safe in food-grade form. May contain asbestos if impure.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "rice",
+        "candy",
+        "chewing gum"
+      ]
+    },
+    "E554": {
+      "ins": "554",
+      "name": "Sodium Aluminosilicate",
+      "category": "Anticaking",
+      "source": "Mineral",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Contains aluminium. Concerns about aluminium accumulation.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "salt",
+        "dried milk",
+        "egg powder"
+      ]
+    },
+    "E570": {
+      "ins": "570",
+      "name": "Stearic Acid",
+      "category": "Glazing Agent",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural fatty acid. Safe - found in all animal and plant fats.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chewing gum",
+        "confectionery"
+      ]
+    },
+    "E574": {
+      "ins": "574",
+      "name": "Gluconic Acid",
+      "category": "Acidity Regulator",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "desserts"
+      ]
+    },
+    "E575": {
+      "ins": "575",
+      "name": "Glucono-delta-lactone",
+      "category": "Acidity Regulator",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Slow-release acid from glucose. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "tofu",
+        "bread",
+        "desserts"
+      ]
+    },
+    "E620": {
+      "ins": "620",
+      "name": "Glutamic Acid",
+      "category": "Flavor Enhancer",
+      "source": "Natural",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Natural amino acid. Same concerns as MSG in isolated form.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "seasonings",
+        "snacks"
+      ]
+    },
+    "E621": {
+      "ins": "621",
+      "name": "Monosodium Glutamate (MSG)",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "Can cause headaches sweating and numbness (MSG symptom complex). Excitotoxin. Linked to obesity.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "Chinese food",
+        "chips",
+        "soups",
+        "noodles"
+      ]
+    },
+    "E622": {
+      "ins": "622",
+      "name": "Monopotassium Glutamate",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Similar to MSG - same flavor-enhancing and health concerns.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "seasonings",
+        "snacks"
+      ]
+    },
+    "E623": {
+      "ins": "623",
+      "name": "Calcium Diglutamate",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Similar to MSG - same health concerns apply.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "seasonings",
+        "snacks"
+      ]
+    },
+    "E624": {
+      "ins": "624",
+      "name": "Monoammonium Glutamate",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Similar to MSG - same health concerns apply.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "seasonings",
+        "snacks"
+      ]
+    },
+    "E625": {
+      "ins": "625",
+      "name": "Magnesium Diglutamate",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Similar to MSG - same health concerns apply.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "seasonings",
+        "snacks"
+      ]
+    },
+    "E627": {
+      "ins": "627",
+      "name": "Disodium Guanylate",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Often used with MSG. May trigger gout - avoid if you have gout.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chips",
+        "instant noodles",
+        "snacks"
+      ]
+    },
+    "E628": {
+      "ins": "628",
+      "name": "Dipotassium Guanylate",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Similar to E627. Avoid if you have gout.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "seasonings",
+        "snacks"
+      ]
+    },
+    "E629": {
+      "ins": "629",
+      "name": "Calcium Guanylate",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Similar to E627. Avoid if you have gout.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "seasonings",
+        "snacks"
+      ]
+    },
+    "E630": {
+      "ins": "630",
+      "name": "Inosinic Acid",
+      "category": "Flavor Enhancer",
+      "source": "Natural",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Natural nucleotide. Avoid if you have gout.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "seasonings",
+        "snacks"
+      ]
+    },
+    "E631": {
+      "ins": "631",
+      "name": "Disodium Inosinate",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Often combined with MSG. Avoid if you have gout.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chips",
+        "instant noodles"
+      ]
+    },
+    "E632": {
+      "ins": "632",
+      "name": "Dipotassium Inosinate",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Similar to E631. Avoid if you have gout.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "seasonings",
+        "snacks"
+      ]
+    },
+    "E633": {
+      "ins": "633",
+      "name": "Calcium Inosinate",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Similar to E631. Avoid if you have gout.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "seasonings",
+        "snacks"
+      ]
+    },
+    "E634": {
+      "ins": "634",
+      "name": "Calcium 5-ribonucleotides",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Combination enhancer. Avoid if you have gout.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "seasonings",
+        "snacks"
+      ]
+    },
+    "E635": {
+      "ins": "635",
+      "name": "Disodium 5-ribonucleotides",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "Combination of E627 and E631 - often used with MSG. May trigger gout attacks.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chips",
+        "instant noodles",
+        "snacks"
+      ]
+    },
+    "E640": {
+      "ins": "640",
+      "name": "Glycine",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural amino acid. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "seasonings"
+      ]
+    },
+    "E650": {
+      "ins": "650",
+      "name": "Zinc Acetate",
+      "category": "Flavor Enhancer",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Zinc salt. Safe in food amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chewing gum"
+      ]
+    },
+    "E900": {
+      "ins": "900",
+      "name": "Dimethylpolysiloxane",
+      "category": "Anti-foaming",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Silicone-based. Used in cooking oils. Generally safe in small amounts.",
+      "adr_limit": "1.5 mg/kg",
+      "common_in": [
+        "cooking oil",
+        "fast food frying"
+      ]
+    },
+    "E901": {
+      "ins": "901",
+      "name": "Beeswax",
+      "category": "Glazing Agent",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural wax from bees. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "candy coating",
+        "fruit glazing"
+      ]
+    },
+    "E902": {
+      "ins": "902",
+      "name": "Candelilla Wax",
+      "category": "Glazing Agent",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural plant wax. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chewing gum",
+        "confectionery"
+      ]
+    },
+    "E903": {
+      "ins": "903",
+      "name": "Carnauba Wax",
+      "category": "Glazing Agent",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural wax from palm tree. Safe - not absorbed by body.",
+      "adr_limit": "7 mg/kg",
+      "common_in": [
+        "candy coating",
+        "fruit glazing"
+      ]
+    },
+    "E904": {
+      "ins": "904",
+      "name": "Shellac",
+      "category": "Glazing Agent",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural resin from lac beetle. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "candy coating",
+        "fruit glazing"
+      ]
+    },
+    "E905": {
+      "ins": "905",
+      "name": "Microcrystalline Wax",
+      "category": "Glazing Agent",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Mineral wax. Safe in food amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chewing gum",
+        "candy"
+      ]
+    },
+    "E912": {
+      "ins": "912",
+      "name": "Montan Acid Esters",
+      "category": "Glazing Agent",
+      "source": "Mineral",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Mineral wax esters. Safe for fruit coating.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "fruit coating"
+      ]
+    },
+    "E914": {
+      "ins": "914",
+      "name": "Oxidized Polyethylene Wax",
+      "category": "Glazing Agent",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Synthetic wax. Limited use approved.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "fruit coating"
+      ]
+    },
+    "E920": {
+      "ins": "920",
+      "name": "L-Cysteine",
+      "category": "Flour Treatment",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Amino acid used in bread-making. Safe. Often from human hair or feathers.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "bread",
+        "baked goods"
+      ]
+    },
+    "E927b": {
+      "ins": "927b",
+      "name": "Carbamide (Urea)",
+      "category": "Flour Treatment",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Used in chewing gum. Safe in food amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chewing gum"
+      ]
+    },
+    "E938": {
+      "ins": "938",
+      "name": "Argon",
+      "category": "Packaging Gas",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Inert noble gas. Completely safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "food packaging"
+      ]
+    },
+    "E939": {
+      "ins": "939",
+      "name": "Helium",
+      "category": "Packaging Gas",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Inert noble gas. Completely safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "food packaging"
+      ]
+    },
+    "E941": {
+      "ins": "941",
+      "name": "Nitrogen",
+      "category": "Packaging Gas",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Makes up 78% of air. Completely safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chips packaging",
+        "coffee"
+      ]
+    },
+    "E942": {
+      "ins": "942",
+      "name": "Nitrous Oxide",
+      "category": "Propellant",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Laughing gas - used in whipped cream. Safe in food use.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "whipped cream cans"
+      ]
+    },
+    "E943a": {
+      "ins": "943a",
+      "name": "Butane",
+      "category": "Propellant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Gas propellant for sprays. Safe - evaporates completely.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cooking spray"
+      ]
+    },
+    "E943b": {
+      "ins": "943b",
+      "name": "Isobutane",
+      "category": "Propellant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Gas propellant. Safe - evaporates completely.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cooking spray"
+      ]
+    },
+    "E944": {
+      "ins": "944",
+      "name": "Propane",
+      "category": "Propellant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Gas propellant. Safe - evaporates completely.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cooking spray"
+      ]
+    },
+    "E948": {
+      "ins": "948",
+      "name": "Oxygen",
+      "category": "Packaging Gas",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Essential for life. Completely safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "food packaging"
+      ]
+    },
+    "E949": {
+      "ins": "949",
+      "name": "Hydrogen",
+      "category": "Packaging Gas",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Lightest element. Safe in food use.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "food packaging"
+      ]
+    },
+    "E950": {
+      "ins": "950",
+      "name": "Acesulfame K",
+      "category": "Sweetener",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Limited safety data. May affect gut bacteria. Potential carcinogen (debated).",
+      "adr_limit": "9 mg/kg",
+      "common_in": [
+        "diet sodas",
+        "sugar-free products"
+      ]
+    },
+    "E951": {
+      "ins": "951",
+      "name": "Aspartame",
+      "category": "Sweetener",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "WHO classified as possibly carcinogenic (2B). Breaks down to methanol. Dangerous for phenylketonuria patients.",
+      "adr_limit": "40 mg/kg",
+      "common_in": [
+        "diet sodas",
+        "sugar-free gum",
+        "yogurt"
+      ]
+    },
+    "E952": {
+      "ins": "952",
+      "name": "Cyclamate",
+      "category": "Sweetener",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "high",
+      "explanation": "BANNED in USA since 1969 due to cancer concerns. Still used in EU with restrictions.",
+      "adr_limit": "7 mg/kg",
+      "common_in": [
+        "diet drinks",
+        "table sweeteners"
+      ]
+    },
+    "E953": {
+      "ins": "953",
+      "name": "Isomalt",
+      "category": "Sweetener",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Sugar alcohol - laxative effect in large amounts. Generally safe in moderation.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sugar-free candy",
+        "diabetic foods"
+      ]
+    },
+    "E954": {
+      "ins": "954",
+      "name": "Saccharin",
+      "category": "Sweetener",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Oldest artificial sweetener - was listed as carcinogen (delisted 2000). May alter gut bacteria.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "table sweeteners",
+        "diet products"
+      ]
+    },
+    "E955": {
+      "ins": "955",
+      "name": "Sucralose",
+      "category": "Sweetener",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "May alter gut bacteria and reduce beneficial bacteria. Linked to insulin resistance at high doses.",
+      "adr_limit": "15 mg/kg",
+      "common_in": [
+        "Splenda",
+        "diet foods",
+        "protein bars"
+      ]
+    },
+    "E957": {
+      "ins": "957",
+      "name": "Thaumatin",
+      "category": "Sweetener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural protein sweetener from African fruit. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chewing gum",
+        "yogurt"
+      ]
+    },
+    "E959": {
+      "ins": "959",
+      "name": "Neohesperidine DC",
+      "category": "Sweetener",
+      "source": "Semi-natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Derived from citrus. Generally safe.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "beverages",
+        "dairy",
+        "chewing gum"
+      ]
+    },
+    "E960": {
+      "ins": "960",
+      "name": "Steviol Glycosides (Stevia)",
+      "category": "Sweetener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural sweetener from stevia plant. Safe and well-tolerated.",
+      "adr_limit": "4 mg/kg",
+      "common_in": [
+        "beverages",
+        "tabletop sweeteners"
+      ]
+    },
+    "E961": {
+      "ins": "961",
+      "name": "Neotame",
+      "category": "Sweetener",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Aspartame derivative but much sweeter. Limited long-term data.",
+      "adr_limit": "2 mg/kg",
+      "common_in": [
+        "beverages",
+        "dairy",
+        "baked goods"
+      ]
+    },
+    "E962": {
+      "ins": "962",
+      "name": "Aspartame-Acesulfame Salt",
+      "category": "Sweetener",
+      "source": "Synthetic",
+      "health_impact": "concerning",
+      "severity": "moderate",
+      "explanation": "Combination of two artificial sweeteners. Same concerns as both components.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "dairy"
+      ]
+    },
+    "E965": {
+      "ins": "965",
+      "name": "Maltitol",
+      "category": "Sweetener",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Sugar alcohol - laxative effect in large amounts (over 40g).",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sugar-free candy",
+        "chocolate"
+      ]
+    },
+    "E966": {
+      "ins": "966",
+      "name": "Lactitol",
+      "category": "Sweetener",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Sugar alcohol - laxative in large amounts. Generally safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sugar-free candy",
+        "diabetic foods"
+      ]
+    },
+    "E967": {
+      "ins": "967",
+      "name": "Xylitol",
+      "category": "Sweetener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Benefits dental health. Safe. Laxative in large doses. TOXIC TO DOGS.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "gum",
+        "dental products",
+        "candy"
+      ]
+    },
+    "E968": {
+      "ins": "968",
+      "name": "Erythritol",
+      "category": "Sweetener",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Sugar alcohol - well tolerated with minimal digestive issues. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "candy",
+        "baked goods"
+      ]
+    },
+    "E999": {
+      "ins": "999",
+      "name": "Quillaia Extract",
+      "category": "Foaming Agent",
+      "source": "Natural",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Natural from bark. May cause digestive irritation at high doses.",
+      "adr_limit": "5 mg/kg",
+      "common_in": [
+        "beverages",
+        "cider"
+      ]
+    },
+    "E1100": {
+      "ins": "1100",
+      "name": "Amylase",
+      "category": "Enzyme",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural enzyme that breaks down starch. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "bread",
+        "flour",
+        "beer"
+      ]
+    },
+    "E1101": {
+      "ins": "1101",
+      "name": "Proteases",
+      "category": "Enzyme",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural enzymes that break down proteins. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "meat tenderizer",
+        "cheese",
+        "beer"
+      ]
+    },
+    "E1102": {
+      "ins": "1102",
+      "name": "Glucose Oxidase",
+      "category": "Enzyme",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural enzyme. Safe - improves bread quality.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "bread",
+        "baked goods"
+      ]
+    },
+    "E1103": {
+      "ins": "1103",
+      "name": "Invertase",
+      "category": "Enzyme",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural enzyme from yeast. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "candy with liquid centers"
+      ]
+    },
+    "E1104": {
+      "ins": "1104",
+      "name": "Lipases",
+      "category": "Enzyme",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Natural fat-breaking enzyme. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cheese",
+        "baked goods"
+      ]
+    },
+    "E1105": {
+      "ins": "1105",
+      "name": "Lysozyme",
+      "category": "Preservative",
+      "source": "Natural",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Enzyme from egg white. May cause allergic reactions in egg-sensitive people.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "cheese",
+        "wine"
+      ]
+    },
+    "E1200": {
+      "ins": "1200",
+      "name": "Polydextrose",
+      "category": "Bulking Agent",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Synthetic fiber - safe. May cause gas/bloating in large amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "low-calorie foods",
+        "baked goods"
+      ]
+    },
+    "E1201": {
+      "ins": "1201",
+      "name": "Polyvinylpyrrolidone",
+      "category": "Stabilizer",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Clarifying agent in beverages. Safe in food amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "wine",
+        "vinegar",
+        "beer"
+      ]
+    },
+    "E1202": {
+      "ins": "1202",
+      "name": "Polyvinylpolypyrrolidone",
+      "category": "Stabilizer",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Similar to E1201. Safe in food amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beer",
+        "wine",
+        "cider"
+      ]
+    },
+    "E1400": {
+      "ins": "1400",
+      "name": "Dextrins",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "soups",
+        "gravies"
+      ]
+    },
+    "E1401": {
+      "ins": "1401",
+      "name": "Acid-treated Starch",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "candy",
+        "sauces"
+      ]
+    },
+    "E1402": {
+      "ins": "1402",
+      "name": "Alkaline-treated Starch",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods",
+        "sauces"
+      ]
+    },
+    "E1403": {
+      "ins": "1403",
+      "name": "Bleached Starch",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "confectionery",
+        "sauces"
+      ]
+    },
+    "E1404": {
+      "ins": "1404",
+      "name": "Oxidized Starch",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe and commonly used.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "soups",
+        "baked goods"
+      ]
+    },
+    "E1405": {
+      "ins": "1405",
+      "name": "Enzyme-treated Starch",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "confectionery"
+      ]
+    },
+    "E1410": {
+      "ins": "1410",
+      "name": "Monostarch Phosphate",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "soups",
+        "dairy"
+      ]
+    },
+    "E1412": {
+      "ins": "1412",
+      "name": "Distarch Phosphate",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "soups",
+        "frozen foods"
+      ]
+    },
+    "E1413": {
+      "ins": "1413",
+      "name": "Phosphated Distarch Phosphate",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "dairy products"
+      ]
+    },
+    "E1414": {
+      "ins": "1414",
+      "name": "Acetylated Distarch Phosphate",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe. Common in frozen foods.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "frozen meals",
+        "sauces",
+        "soups"
+      ]
+    },
+    "E1420": {
+      "ins": "1420",
+      "name": "Acetylated Starch",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "soups",
+        "baby food"
+      ]
+    },
+    "E1422": {
+      "ins": "1422",
+      "name": "Acetylated Distarch Adipate",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch used as thickener. Safe and commonly used.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "frozen foods",
+        "batters"
+      ]
+    },
+    "E1440": {
+      "ins": "1440",
+      "name": "Hydroxypropyl Starch",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "soups",
+        "dairy"
+      ]
+    },
+    "E1442": {
+      "ins": "1442",
+      "name": "Hydroxypropyl Distarch Phosphate",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe and widely used.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baby food",
+        "sauces",
+        "dairy"
+      ]
+    },
+    "E1450": {
+      "ins": "1450",
+      "name": "Starch Sodium Octenyl Succinate",
+      "category": "Emulsifier",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch emulsifier. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "beverages",
+        "dressings"
+      ]
+    },
+    "E1451": {
+      "ins": "1451",
+      "name": "Acetylated Oxidized Starch",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Modified starch. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "sauces",
+        "confectionery"
+      ]
+    },
+    "E1452": {
+      "ins": "1452",
+      "name": "Starch Aluminium Octenyl Succinate",
+      "category": "Thickener",
+      "source": "Modified starch",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Contains aluminium. Generally safe in approved amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "encapsulated flavors"
+      ]
+    },
+    "E1505": {
+      "ins": "1505",
+      "name": "Triethyl Citrate",
+      "category": "Stabilizer",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Citric acid ester. Safe in food amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "supplements",
+        "coatings"
+      ]
+    },
+    "E1510": {
+      "ins": "1510",
+      "name": "Ethanol",
+      "category": "Solvent",
+      "source": "Natural",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Alcohol - natural product of fermentation. Safe in food amounts.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "vanilla extract",
+        "flavors"
+      ]
+    },
+    "E1517": {
+      "ins": "1517",
+      "name": "Glyceryl Diacetate",
+      "category": "Humectant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Glycerol ester. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "baked goods"
+      ]
+    },
+    "E1518": {
+      "ins": "1518",
+      "name": "Glyceryl Triacetate (Triacetin)",
+      "category": "Humectant",
+      "source": "Synthetic",
+      "health_impact": "safe",
+      "severity": "none",
+      "explanation": "Humectant. Safe.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "chewing gum",
+        "baked goods"
+      ]
+    },
+    "E1519": {
+      "ins": "1519",
+      "name": "Benzyl Alcohol",
+      "category": "Flavoring",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Used as solvent for flavors. Safe in small amounts. May cause allergic reactions.",
+      "adr_limit": "No limit",
+      "common_in": [
+        "flavored products"
+      ]
+    },
+    "E1520": {
+      "ins": "1520",
+      "name": "Propylene Glycol",
+      "category": "Humectant",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Used as solvent and humectant. Safe in food amounts but high doses may cause lactic acidosis.",
+      "adr_limit": "25 mg/kg",
+      "common_in": [
+        "cake mixes",
+        "salad dressings",
+        "ice cream"
+      ]
+    },
+    "E1521": {
+      "ins": "1521",
+      "name": "Polyethylene Glycol",
+      "category": "Glazing Agent",
+      "source": "Synthetic",
+      "health_impact": "low_concern",
+      "severity": "minor",
+      "explanation": "Synthetic polymer. Safe in approved food amounts.",
+      "adr_limit": "10 mg/kg",
+      "common_in": [
+        "supplement coatings"
+      ]
+    }
+  }
+}

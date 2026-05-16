@@ -1,0 +1,74 @@
+{
+  "model_name": "FoodClassifier_GAP",
+  "architecture": "Embedding + GlobalAveragePooling1D",
+  "vocab_file": "vocab_GAP1.json",
+  "max_seq_len": 150,
+  "inputs": {
+    "token_input": {
+      "dtype": "int32",
+      "shape": [
+        150
+      ],
+      "description": "Tokenize text with vocab_GAP.json, pad/truncate to 150"
+    },
+    "num_input": {
+      "dtype": "float32",
+      "features": [
+        "fat_g",
+        "carbs_g",
+        "sugars_g",
+        "fiber_g",
+        "protein_g",
+        "sodium_mg",
+        "additives_n"
+      ],
+      "normalisation": {
+        "mean": [
+          6.6850175857543945,
+          37.051631927490234,
+          8.835175514221191,
+          3.20296311378479,
+          8.462971687316895,
+          326.7483215332031,
+          2.415881633758545
+        ],
+        "std": [
+          9.41411018371582,
+          24.46924591064453,
+          10.144216537475586,
+          3.7679226398468018,
+          5.5979485511779785,
+          324.2847900390625,
+          2.8352267742156982
+        ],
+        "formula": "(value - mean) / std"
+      }
+    }
+  },
+  "output": {
+    "dtype": "float32",
+    "shape": 9,
+    "label_map": {
+      "0": "Beverages",
+      "1": "Cereals and potatoes",
+      "2": "Composite foods",
+      "3": "Fat and sauces",
+      "4": "Fish Meat Eggs",
+      "5": "Fruits and vegetables",
+      "6": "Milk and dairy products",
+      "7": "Salty snacks",
+      "8": "Sugary snacks"
+    }
+  },
+  "class_labels": [
+    "Beverages",
+    "Cereals and potatoes",
+    "Composite foods",
+    "Fat and sauces",
+    "Fish Meat Eggs",
+    "Fruits and vegetables",
+    "Milk and dairy products",
+    "Salty snacks",
+    "Sugary snacks"
+  ]
+}

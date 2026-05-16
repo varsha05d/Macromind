@@ -1,0 +1,24 @@
+{
+  "background_values": [
+    0.2, 0.2, 0.2, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2, 4.8, 9.9, 28.0, 2.6, 4.4, 176.0
+  ],
+  "feature_names": [
+    "Category_Beverages",
+    "Category_Cereals",
+    "Category_Dairy",
+    "Category_Composite",
+    "Category_Fats",
+    "Category_Fruits_Veg",
+    "Category_Fish",
+    "Category_Meat",
+    "Category_Snacks",
+    "Total_Fat_g",
+    "Total_Sugars_g",
+    "Carbohydrates_g",
+    "Fiber_g",
+    "Protein_g",
+    "Sodium_mg"
+  ],
+  "num_samples": 1,
+  "num_features": 15
+}

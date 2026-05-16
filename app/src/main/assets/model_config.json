@@ -1,0 +1,73 @@
+{
+  "text_seq_len": 150,
+  "vocab_size": 11386,
+  "category_labels": [
+    "Beverages",
+    "Cereals and potatoes",
+    "Composite foods",
+    "Fat and sauces",
+    "Fish Meat Eggs",
+    "Fruits and vegetables",
+    "Milk and dairy products",
+    "Salty snacks",
+    "Sugary snacks"
+  ],
+  "health_labels": [
+    "Healthy",
+    "Moderate",
+    "Unhealthy"
+  ],
+  "health_input_size": 17,
+  "nutrition_feature_names": [
+    "fat_g",
+    "carbs_g",
+    "sugars_g",
+    "fiber_g",
+    "protein_g",
+    "sodium_mg",
+    "additives_n"
+  ],
+  "shap_n_samples": 100,
+  "shap_feature_names": [],
+  "category_model": {
+    "input_text_length": 150,
+    "num_categories": 9,
+    "category_names": [
+      "Beverages",
+      "Cereals and potatoes",
+      "Composite foods",
+      "Fat and sauces",
+      "Fish Meat Eggs",
+      "Fruits and vegetables",
+      "Milk and dairy products",
+      "Salty snacks",
+      "Sugary snacks"
+    ]
+  },
+  "health_model": {
+    "input_size": 17,
+    "output_classes": [
+      "Healthy",
+      "Moderate",
+      "Unhealthy"
+    ],
+    "num_classes": 3
+  },
+  "nutrition_features": [
+    "fat_g",
+    "carbs_g",
+    "sugars_g",
+    "fiber_g",
+    "protein_g",
+    "sodium_mg",
+    "additives_n"
+  ],
+  "nutrition_feature_count": 7,
+  "shap": {
+    "enabled": true,
+    "num_background_samples": 5,
+    "kernel_samples": 100
+  },
+  "version": "4.0-offline",
+  "generated_at": "2026-04-19"
+}
